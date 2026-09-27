@@ -89,21 +89,35 @@ export function paintTerrain(
   // 2 · chamfer distance (3-4) from land, in thirds of a pixel
   const dist = new Float32Array(size * size);
   for (let i = 0; i < dist.length; i++) dist[i] = kind[i] === WATER ? 1e9 : 0;
-  const at = (x: number, y: number) => (x < 0 || y < 0 || x >= size || y >= size ? 1e9 : (dist[y * size + x] as number));
+  const at = (x: number, y: number) =>
+    x < 0 || y < 0 || x >= size || y >= size ? 1e9 : (dist[y * size + x] as number);
   for (let y = 0; y < size; y++) {
     for (let x = 0; x < size; x++) {
       const i = y * size + x;
-      dist[i] = Math.min(dist[i] as number, at(x - 1, y) + 3, at(x, y - 1) + 3, at(x - 1, y - 1) + 4, at(x + 1, y - 1) + 4);
+      dist[i] = Math.min(
+        dist[i] as number,
+        at(x - 1, y) + 3,
+        at(x, y - 1) + 3,
+        at(x - 1, y - 1) + 4,
+        at(x + 1, y - 1) + 4,
+      );
     }
   }
   for (let y = size - 1; y >= 0; y--) {
     for (let x = size - 1; x >= 0; x--) {
       const i = y * size + x;
-      dist[i] = Math.min(dist[i] as number, at(x + 1, y) + 3, at(x, y + 1) + 3, at(x + 1, y + 1) + 4, at(x - 1, y + 1) + 4);
+      dist[i] = Math.min(
+        dist[i] as number,
+        at(x + 1, y) + 3,
+        at(x, y + 1) + 3,
+        at(x + 1, y + 1) + 4,
+        at(x - 1, y + 1) + 4,
+      );
     }
   }
 
-  const kindAt = (x: number, y: number) => (x < 0 || y < 0 || x >= size || y >= size ? WATER : (kind[y * size + x] as number));
+  const kindAt = (x: number, y: number) =>
+    x < 0 || y < 0 || x >= size || y >= size ? WATER : (kind[y * size + x] as number);
   const touches = (x: number, y: number, test: (k: number) => boolean) =>
     test(kindAt(x - 1, y)) || test(kindAt(x + 1, y)) || test(kindAt(x, y - 1)) || test(kindAt(x, y + 1));
 
@@ -167,7 +181,8 @@ export function paintTerrain(
       let open = true;
       for (let i = -1; i < 5; i++) {
         const x = wx + i;
-        if (kindAt(x, wy) !== WATER || (dist[wy * size + Math.min(size - 1, Math.max(0, x))] as number) / 3 < 12) open = false;
+        if (kindAt(x, wy) !== WATER || (dist[wy * size + Math.min(size - 1, Math.max(0, x))] as number) / 3 < 12)
+          open = false;
       }
       if (!open) continue;
       for (let i = 0; i < 3; i++) {

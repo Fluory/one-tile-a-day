@@ -7,7 +7,18 @@ import type { DayEntry, Element, World } from '@/features/world';
  */
 
 const ELEMENT_KEYS: (keyof Element)[] = ['id', 'day', 'type', 'x', 'y', 'variant', 'name', 'role', 'home'];
-const DAY_KEYS: (keyof DayEntry)[] = ['day', 'date', 'action', 'x', 'y', 'title', 'lore', 'source', 'terrain', 'element'];
+const DAY_KEYS: (keyof DayEntry)[] = [
+  'day',
+  'date',
+  'action',
+  'x',
+  'y',
+  'title',
+  'lore',
+  'source',
+  'terrain',
+  'element',
+];
 
 function ordered<T extends object>(value: T, keys: readonly (keyof T)[]): string {
   const parts: string[] = [];

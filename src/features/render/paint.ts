@@ -1,12 +1,4 @@
-import {
-  hashCell,
-  hashString,
-  seasonOf,
-  WorldContext,
-  type Element,
-  type Season,
-  type World,
-} from '@/features/world';
+import { hashCell, hashString, seasonOf, WorldContext, type Element, type Season, type World } from '@/features/world';
 import { PixelCanvas } from './canvas';
 import { paintTerrain, TILE } from './terrain';
 import { AWNINGS, CLOTHES, FUR, PALETTES, ROOFS, SAILS, type ColorKey, type Palette } from './palette';
@@ -86,7 +78,9 @@ export function chooseFrame(world: World): Frame {
   if (!Number.isFinite(minX)) return { x: 0, y: 0, size: Math.min(world.width, world.height) };
   const margin = 3;
   const span = Math.max(maxX - minX, maxY - minY) + 1 + margin * 2;
-  const size = FRAME_SIZES.find((s) => s >= span && s <= Math.min(world.width, world.height)) ?? Math.min(world.width, world.height);
+  const size =
+    FRAME_SIZES.find((s) => s >= span && s <= Math.min(world.width, world.height)) ??
+    Math.min(world.width, world.height);
   const clamp = (v: number, max: number) => Math.max(0, Math.min(max, v));
   const quantise = (v: number) => Math.round(v / 2) * 2;
   const x = clamp(quantise((minX + maxX + 1) / 2 - size / 2), world.width - size);
@@ -113,7 +107,8 @@ export function paintWorld(world: World, options: PaintOptions = {}): PaintedIsl
   paintTerrain(ctx, frame, C, season, base, { a: overlays.waveA, b: overlays.waveB });
 
   // ---------------------------------------------------------------- things
-  const inFrame = (e: Element) => e.x >= frame.x && e.y >= frame.y && e.x < frame.x + frame.size && e.y < frame.y + frame.size;
+  const inFrame = (e: Element) =>
+    e.x >= frame.x && e.y >= frame.y && e.x < frame.x + frame.size && e.y < frame.y + frame.size;
   const drawables = world.elements
     .filter(inFrame)
     .sort((a, b) => a.y - b.y || a.x - b.x || order(a) - order(b) || Number(a.id.slice(1)) - Number(b.id.slice(1)));
@@ -124,7 +119,13 @@ export function paintWorld(world: World, options: PaintOptions = {}): PaintedIsl
     return overrides[key] ?? C[key];
   };
 
-  const stamp = (target: PixelCanvas, sprite: Sprite, left: number, bottom: number, overrides: Partial<Record<ColorKey, string>> = {}) => {
+  const stamp = (
+    target: PixelCanvas,
+    sprite: Sprite,
+    left: number,
+    bottom: number,
+    overrides: Partial<Record<ColorKey, string>> = {},
+  ) => {
     const top = bottom - sprite.length + 1;
     sprite.forEach((row, j) => {
       for (let i = 0; i < row.length; i++) {
@@ -270,7 +271,13 @@ export function paintWorld(world: World, options: PaintOptions = {}): PaintedIsl
 
   // ---------------------------------------------------------------- highlight
   const mark = options.highlight === undefined ? latestTile(world) : options.highlight;
-  if (mark && mark.x >= frame.x && mark.y >= frame.y && mark.x < frame.x + frame.size && mark.y < frame.y + frame.size) {
+  if (
+    mark &&
+    mark.x >= frame.x &&
+    mark.y >= frame.y &&
+    mark.x < frame.x + frame.size &&
+    mark.y < frame.y + frame.size
+  ) {
     const ox = (mark.x - frame.x) * TILE;
     const oy = (mark.y - frame.y) * TILE;
     const hi = C.highlight;

@@ -22,7 +22,11 @@ describe('isle.svg', () => {
   });
 
   it('escapes lore text', () => {
-    const { world } = applyDay(genesis, { action: 'land', x: 30, y: 31, lore: 'Sand & salt, "calm" water.', source: 'claude' }, '2026-09-29');
+    const { world } = applyDay(
+      genesis,
+      { action: 'land', x: 30, y: 31, lore: 'Sand & salt, "calm" water.', source: 'claude' },
+      '2026-09-29',
+    );
     expect(renderIsleSvg(world)).toContain('Sand &amp; salt, &quot;calm&quot; water.');
   });
 });

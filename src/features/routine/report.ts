@@ -88,7 +88,10 @@ export function commitMessage(world: World): string {
 export function prBody(world: World, options: { imageUrl?: string; verify?: string } = {}): string {
   const last = world.days[world.days.length - 1] as DayEntry;
   const stats = worldStats(world);
-  const who = last.source === 'claude' ? 'Claude hat die Änderung ausgewählt und die Lore geschrieben' : 'Der regelbasierte Director hat die Änderung automatisch gewählt';
+  const who =
+    last.source === 'claude'
+      ? 'Claude hat die Änderung ausgewählt und die Lore geschrieben'
+      : 'Der regelbasierte Director hat die Änderung automatisch gewählt';
   const label = last.action === 'genesis' ? 'Genesis' : CATALOGUE[last.action].label;
   return [
     '## Warum',

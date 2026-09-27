@@ -48,7 +48,8 @@ const { positionals, values } = parseArgs({
   },
 });
 
-const print = (value: unknown) => process.stdout.write(`${typeof value === 'string' ? value : JSON.stringify(value, null, 2)}\n`);
+const print = (value: unknown) =>
+  process.stdout.write(`${typeof value === 'string' ? value : JSON.stringify(value, null, 2)}\n`);
 const fail = (message: string, code = 1): never => {
   process.stderr.write(`✗ ${message}\n`);
   process.exit(code);
@@ -147,7 +148,9 @@ switch (command) {
     const stale = staleFiles(world);
     if (stale.length) problems.push(`out of date: ${stale.join(', ')} – run "npm run world:render"`);
     if (problems.length) fail(`world check failed:\n  - ${problems.join('\n  - ')}`);
-    print(`world ok – day ${world.days[world.days.length - 1]?.day}, ${world.elements.length} elements, generated files up to date`);
+    print(
+      `world ok – day ${world.days[world.days.length - 1]?.day}, ${world.elements.length} elements, generated files up to date`,
+    );
     break;
   }
 
@@ -160,7 +163,8 @@ switch (command) {
     break;
 
   case 'genesis': {
-    if (worldExists() && !values.force) fail(`${PATHS.world} already exists – genesis happens only once (use --force to overwrite)`);
+    if (worldExists() && !values.force)
+      fail(`${PATHS.world} already exists – genesis happens only once (use --force to overwrite)`);
     const date = today();
     const files = writeWorld(createGenesis(date));
     print({ genesis: date, files });
