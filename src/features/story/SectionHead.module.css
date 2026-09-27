@@ -1,0 +1,20 @@
+.head {
+  position: relative;
+  display: grid;
+  gap: var(--s-4);
+  max-width: 820px;
+  margin-bottom: clamp(32px, 5vw, 64px);
+}
+
+.head::before {
+  content: '';
+  position: absolute;
+  inset: -56px -96px -56px -120px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(closest-side, color-mix(in oklab, var(--paper) 82%, transparent) 30%, transparent);
+}
+
+.headTitle {
+  font-size: var(--step-5);
+}

@@ -1,7 +1,8 @@
 import { SITE } from '@/features/world-data';
 import { Reveal } from '@/shared/motion';
 import { SceneSection } from './SceneSection';
-import styles from './story.module.css';
+import styles from './Archipelago.module.css';
+import { SectionHead } from './SectionHead';
 
 /**
  * Fetch a sibling island's README image at build time (refreshed every few hours) and
@@ -24,16 +25,14 @@ export async function Archipelago() {
   return (
     <SceneSection className="section" camera="far" dim={0.15} labelledBy="islands-title">
       <div className="container">
-        <div className={styles.head}>
-          <p className="eyebrow">Archipelago</p>
-          <h2 id="islands-title" className={styles.headTitle}>
-            One island is a mechanic. Three are an archipelago.
-          </h2>
-          <p className="lede">
-            This island grows by its own rules. Two sister islands grow by other forces – the real weather in Heilbronn
-            and the wishes of strangers. Same routine, same one commit a day.
-          </p>
-        </div>
+        <SectionHead
+          eyebrow="Archipelago"
+          title="One island is a mechanic. Three are an archipelago."
+          id="islands-title"
+        >
+          This island grows by its own rules. Two sister islands grow by other forces – the real weather in Heilbronn
+          and the wishes of strangers. Same routine, same one commit a day.
+        </SectionHead>
         <Reveal className={styles.islands} stagger="a">
           {SITE.siblings.map((s, i) => (
             <a key={s.repo} href={s.site ?? `https://github.com/${s.repo}`} className={`${styles.island} glass`}>

@@ -26,7 +26,9 @@ const { positionals, values } = parseArgs({
 const write = (path: string, data: string | Uint8Array) => {
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, data);
-  process.stdout.write(`wrote ${path} (${Math.round((typeof data === 'string' ? data.length : data.byteLength) / 1024)} KB)\n`);
+  process.stdout.write(
+    `wrote ${path} (${Math.round((typeof data === 'string' ? data.length : data.byteLength) / 1024)} KB)\n`,
+  );
 };
 
 switch (positionals[0]) {

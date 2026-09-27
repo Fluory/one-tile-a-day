@@ -8,9 +8,9 @@ import {
   Routine,
   Rules,
   SceneSection,
+  SectionHead,
   Timelapse,
 } from '@/features/story';
-import storyStyles from '@/features/story/story.module.css';
 import { getDaysNewestFirst, getLatest, getStats, getWorld, repoUrl } from '@/features/world-data';
 
 export default function HomePage() {
@@ -30,12 +30,7 @@ export default function HomePage() {
       <LogbookPreview entries={getDaysNewestFirst().slice(0, 6)} />
       <SceneSection className="section" camera="hero" dim={0.3} labelledBy="chapters-title">
         <div className="container">
-          <div className={storyStyles.head}>
-            <p className="eyebrow">Chapters</p>
-            <h2 id="chapters-title" className={storyStyles.headTitle}>
-              How it works, in four short stories.
-            </h2>
-          </div>
+          <SectionHead eyebrow="Chapters" title="How it works, in four short stories." id="chapters-title" />
           <ChapterCards />
         </div>
       </SceneSection>

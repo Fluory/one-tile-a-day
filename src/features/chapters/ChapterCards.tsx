@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
 import { ViewTransition } from 'react';
-import styles from '@/features/story/story.module.css';
+import styles from './ChapterCards.module.css';
 import { PixelIcon } from '@/shared/ui';
 import { Reveal } from '@/shared/motion';
 import { CHAPTERS } from './registry';

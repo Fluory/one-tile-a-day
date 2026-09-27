@@ -2,7 +2,7 @@
 # Update via a dedicated PR when the maturity level changes.
 
 system:
-  fluory_system_version: "2.1" # = Entwicklungsplan/templates/VERSION when adopted
+  fluory_system_version: '2.1' # = Entwicklungsplan/templates/VERSION when adopted
   last_system_review: 2026-09-28
 
 project:
@@ -12,21 +12,21 @@ project:
 
 repository:
   visibility: public
-  public_reason: "deliberately open source – the commit history is the artwork"
+  public_reason: 'deliberately open source – the commit history is the artwork'
   sensitive_context: none
 
 governance:
   # Only for the routine's daily world PR (world/world.json, world/isle.svg, LOGBOOK.md; one commit;
   # CI green) – merged automatically by the daily-merge job. Every other PR follows the risk matrix.
   p0_self_merge_exception: true
-  approved_by: "Fluory (setup request, 2026-09-28)"
+  approved_by: 'Fluory (setup request, 2026-09-28)'
   approved_at: 2026-09-28
 
 agent:
   sandbox: false # P0; the routine only runs the repo's own npm scripts
 
 budget:
-  frame: "0 € – GitHub Free (public), Vercel Hobby, Claude subscription for the daily routine"
+  frame: '0 € – GitHub Free (public), Vercel Hobby, Claude subscription for the daily routine'
 
 risk:
   public_users: true # public website

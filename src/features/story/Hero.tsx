@@ -3,7 +3,7 @@ import { Countdown } from '@/features/chrome';
 import { formatDate, type DayEntry, type WorldStats } from '@/features/world';
 import { Magnetic, SplitReveal } from '@/shared/motion';
 import { SceneSection } from './SceneSection';
-import styles from './story.module.css';
+import styles from './Hero.module.css';
 
 export function Hero({ latest, stats }: { latest: DayEntry; stats: WorldStats }) {
   return (

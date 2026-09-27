@@ -12,7 +12,10 @@ test.describe('smoke', () => {
 
   test('logbook lists day 0 and opens its page', async ({ page }) => {
     await page.goto('/logbook');
-    await page.getByRole('link', { name: /A sandbank in the open sea/ }).first().click();
+    await page
+      .getByRole('link', { name: /A sandbank in the open sea/ })
+      .first()
+      .click();
     await expect(page).toHaveURL(/\/day\/0$/);
     await expect(page.getByRole('heading', { level: 1 })).toContainText('A sandbank in the open sea');
   });

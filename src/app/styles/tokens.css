@@ -1,0 +1,121 @@
+/* =============================================================================
+   One Tile a Day – design system
+   Tokens → reset → type → surfaces (glass) → controls → motion → utilities.
+   Day is the default theme; [data-theme='night'] turns on the lighthouse.
+   ============================================================================= */
+
+:root {
+  --font-display: var(--font-fraunces), 'Iowan Old Style', Georgia, serif;
+  --font-body: var(--font-figtree), system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-pixel: var(--font-silkscreen), ui-monospace, monospace;
+  --font-mono: var(--font-jetbrains), ui-monospace, 'SFMono-Regular', monospace;
+
+  /* palette – island */
+  --sea-0: #1d5a7a;
+  --sea-1: #2a7f9e;
+  --sea-2: #3fa6b8;
+  --sea-3: #7fd0d4;
+  --foam: #e8f7f2;
+  --sand: #ecd49d;
+  --sand-deep: #d9b77e;
+  --grass: #6aab45;
+  --leaf: #2e6b33;
+  --coral: #ff6b57;
+  --coral-deep: #d9463b;
+  --sun: #ffd96a;
+  --roof: #c95a3c;
+
+  /* theme – day */
+  --sky-top: #f4dfc4;
+  --sky-mid: #d3e7ea;
+  --sky-low: #bcdde3;
+  --ink: #10212f;
+  --ink-soft: #3a5063;
+  --ink-faint: #6a7f8f;
+  --paper: #fbf6ea;
+  --paper-2: #f3ead6;
+  --line: rgb(16 33 47 / 0.12);
+  --accent: var(--coral);
+  --accent-ink: #5c1409;
+  --on-accent: #fffaf3;
+  --glass: rgb(251 246 234 / 0.62);
+  --glass-strong: rgb(251 246 234 / 0.86);
+  --glass-edge: rgb(255 255 255 / 0.75);
+  --glass-shade: rgb(16 33 47 / 0.08);
+  --shadow-soft: 0 1px 0 rgb(255 255 255 / 0.6) inset, 0 24px 60px -28px rgb(16 33 47 / 0.45);
+  --shadow-lift: 0 1px 0 rgb(255 255 255 / 0.7) inset, 0 34px 80px -30px rgb(16 33 47 / 0.55);
+  --grain-opacity: 0.07;
+  --grain-blend: multiply;
+  --glow: color-mix(in oklab, var(--sun) 30%, transparent);
+  --focus: #0f6fff;
+
+  /* spacing (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 144px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --measure: 62ch;
+  --wide: 1240px;
+
+  /* radii */
+  --r-s: 10px;
+  --r-m: 18px;
+  --r-l: 28px;
+  --r-xl: 40px;
+  --r-pill: 999px;
+
+  /* fluid type scale (min 360px → max 1440px) */
+  --step--1: clamp(0.83rem, 0.8rem + 0.13vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.19vw, 1.13rem);
+  --step-1: clamp(1.2rem, 1.12rem + 0.37vw, 1.45rem);
+  --step-2: clamp(1.44rem, 1.3rem + 0.65vw, 1.88rem);
+  --step-3: clamp(1.73rem, 1.49rem + 1.07vw, 2.45rem);
+  --step-4: clamp(2.07rem, 1.68rem + 1.72vw, 3.2rem);
+  --step-5: clamp(2.49rem, 1.87rem + 2.73vw, 4.4rem);
+  --step-6: clamp(3rem, 1.9rem + 5vw, 7.4rem);
+  --step-7: clamp(3.6rem, 1.6rem + 8.8vw, 11rem);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-1: 160ms;
+  --dur-2: 280ms;
+  --dur-3: 520ms;
+  --dur-4: 900ms;
+
+  color-scheme: light;
+}
+
+[data-theme='night'] {
+  --sky-top: #070f19;
+  --sky-mid: #12283c;
+  --sky-low: #0f2436;
+  --ink: #f4ecdc;
+  --ink-soft: #c5d1d8;
+  --ink-faint: #8ea3b1;
+  --paper: #0f1d2a;
+  --paper-2: #13283a;
+  --line: rgb(244 236 220 / 0.14);
+  --accent: #ff8a6b;
+  --accent-ink: #2a0b05;
+  --on-accent: #1a0904;
+  --glass: rgb(13 27 40 / 0.58);
+  --glass-strong: rgb(13 27 40 / 0.84);
+  --glass-edge: rgb(255 255 255 / 0.12);
+  --glass-shade: rgb(0 0 0 / 0.3);
+  --shadow-soft: 0 1px 0 rgb(255 255 255 / 0.06) inset, 0 24px 60px -24px rgb(0 0 0 / 0.7);
+  --shadow-lift: 0 1px 0 rgb(255 255 255 / 0.08) inset, 0 34px 80px -26px rgb(0 0 0 / 0.8);
+  --grain-opacity: 0.09;
+  --grain-blend: screen;
+  --glow: rgb(154 184 255 / 0.16);
+  --focus: #8ab8ff;
+  color-scheme: dark;
+}

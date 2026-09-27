@@ -1,0 +1,31 @@
+.mapTeaser {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 5vw, 72px);
+  align-items: center;
+}
+
+.mapFrame {
+  display: block;
+  padding: 12px;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  transform: rotate(1.2deg);
+  transition: transform var(--dur-4) var(--ease-out);
+}
+
+.mapFrame:hover {
+  transform: rotate(0deg) scale(1.015);
+}
+
+.mapFrame svg {
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--r-xl) - 10px);
+}
+
+@media (max-width: 900px) {
+  .mapTeaser {
+    grid-template-columns: 1fr;
+  }
+}

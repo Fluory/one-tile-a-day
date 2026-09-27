@@ -1,0 +1,118 @@
+.lapse {
+  position: relative;
+  height: 420vh;
+}
+
+.lapseSticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: grid;
+  align-items: end;
+  padding-bottom: clamp(24px, 6vh, 64px);
+}
+
+.lapseInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--s-6);
+  align-items: end;
+}
+
+.lapseCard {
+  padding: var(--s-5) var(--s-6) var(--s-5);
+  max-width: 560px;
+}
+
+.counter {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+  font-family: var(--font-pixel);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.counterLabel {
+  font-size: 0.28em;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.counterDate {
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  margin-top: var(--s-2);
+}
+
+.caption {
+  padding: var(--s-5);
+  display: grid;
+  gap: var(--s-2);
+  min-height: 150px;
+}
+
+.captionTitle {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  line-height: 1.1;
+}
+
+.lapseTrack {
+  position: relative;
+  height: 6px;
+  margin-top: var(--s-4);
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--ink) 12%, transparent);
+  overflow: hidden;
+}
+
+.lapseFill {
+  position: absolute;
+  inset: 0;
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--sea-2), var(--grass), var(--sun), var(--accent));
+}
+
+.simNote {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2) var(--s-3);
+  margin-top: var(--s-3);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.simBadge {
+  font-family: var(--font-pixel);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.switch {
+  border: 0;
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  background: color-mix(in oklab, var(--ink) 10%, transparent);
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.switch:hover {
+  background: color-mix(in oklab, var(--ink) 16%, transparent);
+}
+
+@media (max-width: 900px) {
+  .lapseInner {
+    grid-template-columns: 1fr;
+  }
+}

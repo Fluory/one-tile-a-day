@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useScene } from '@/features/scene';
 import { formatDate, type World } from '@/features/world';
-import styles from './story.module.css';
+import styles from './Timelapse.module.css';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 

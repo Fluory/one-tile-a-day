@@ -6,7 +6,10 @@ import { encodeGif } from './gif';
  * The island growing day by day as an animated GIF – one frame per day on a fixed frame, with the
  * day number burnt in. Used for the monthly release and the README.
  */
-export function timelapseGif(world: World, options: { every?: number; scale?: number; label?: string } = {}): Uint8Array {
+export function timelapseGif(
+  world: World,
+  options: { every?: number; scale?: number; label?: string } = {},
+): Uint8Array {
   const every = options.every ?? 1;
   const scale = options.scale ?? 2;
   const frame = chooseFrame(world);
@@ -21,7 +24,10 @@ export function timelapseGif(world: World, options: { every?: number; scale?: nu
     const painted = paintWorld(worldAt(world, day), { frame, highlight: null });
     width = painted.width;
     height = painted.height;
-    const rgba = toRgba([painted.base, painted.overlays.waveA, painted.overlays.bob, painted.overlays.sailsA], painted.palette.sea0);
+    const rgba = toRgba(
+      [painted.base, painted.overlays.waveA, painted.overlays.bob, painted.overlays.sailsA],
+      painted.palette.sea0,
+    );
     const stamp = (text: string, x0: number, y0: number) => {
       const plot = (x: number, y: number, color: [number, number, number]) => {
         const px = x0 + x;
