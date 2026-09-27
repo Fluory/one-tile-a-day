@@ -1,0 +1,38 @@
+The island is drawn from nothing but code: no image files, no outside assets. Everything comes from a handful of hand-drawn sprites and four small palettes.
+
+## Tiles and sprites
+
+The map is 64 × 64 tiles, each tile 8 × 8 pixels. Buildings, trees and animals are sprites written as strings – one character per pixel, one letter per colour:
+
+```text
+'.....z..',
+'..RRRzR.',
+'.RrrrrrR',
+'RrrrrrrR',
+'RRRRRRRR',
+'.vvvvvW.',
+'.vyvdvW.',
+'.vyvdvW.',
+```
+
+That is the house. Tall sprites like the lighthouse reach up into the tile above, and everything is drawn back to front so roofs overlap correctly.
+
+<Sprites names={['house', 'tree', 'pine', 'lighthouse', 'library', 'windmill', 'market', 'boat', 'well', 'ruin']} />
+
+## Soft coasts from hard tiles
+
+The world is made of squares, but coastlines should not be. The renderer blends between the centres of neighbouring tiles (a bilinear "marching squares" field with a little noise), so convex corners round off and bays fill in. The sea darkens with the distance to the shore, dithered with a 4 × 4 Bayer matrix like on old consoles, and a foam line follows every coast.
+
+## Four seasons
+
+The date decides the palette. Autumn turns leaves orange, winter lays snow on meadows and rocks and leaves only the pines green.
+
+<Swatches />
+
+## Animated, but only a little
+
+The README image is an SVG with a few CSS keyframes: waves flip between two frames, windmill sails turn, boats bob, the lighthouse blinks and the newest tile is marked with blinking corners. With `prefers-reduced-motion` everything holds still.
+
+## The same island in 3D
+
+The website builds a 3D version from exactly the same data. Every tile becomes a block that rises out of the sea on the day it appeared; buildings are assembled from six shapes – box, cylinder, cone, pyramid, prism and icosahedron – and rendered with instancing, so the whole island is only a handful of draw calls. One persistent canvas stays alive behind every page, which is why the island never has to load twice.

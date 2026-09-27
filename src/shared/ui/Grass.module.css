@@ -1,0 +1,50 @@
+.meadow {
+  position: relative;
+  height: var(--grass-height, 96px);
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(to top, #000 55%, transparent);
+}
+
+.blade {
+  position: absolute;
+  bottom: -2px;
+  left: var(--x);
+  width: var(--w);
+  height: var(--h);
+  transform-origin: 50% 100%;
+  transform: rotate(var(--r));
+  background: linear-gradient(to top, var(--c0), var(--c1));
+  clip-path: polygon(0 100%, 42% 0, 58% 0, 100% 100%);
+  animation: sway var(--d) ease-in-out var(--delay) infinite alternate;
+  will-change: transform;
+}
+
+@keyframes sway {
+  from {
+    transform: rotate(calc(var(--r) - 5deg));
+  }
+  to {
+    transform: rotate(calc(var(--r) + 6deg));
+  }
+}
+
+.flower {
+  position: absolute;
+  bottom: calc(var(--h) - 6px);
+  left: var(--x);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--c) 40%, #fff);
+  transform-origin: 50% calc(var(--h) + 6px);
+  animation: sway var(--d) ease-in-out var(--delay) infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blade,
+  .flower {
+    animation: none;
+  }
+}

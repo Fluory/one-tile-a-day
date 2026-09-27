@@ -14,3 +14,4 @@ export {
 } from './paint';
 export { AWNINGS, CLOTHES, FUR, PALETTES, ROOFS, SAILS, type ColorKey, type Palette } from './palette';
 export { renderIsleSvg, type SvgOptions } from './svg';
+export { ICONS, pixelIcon, type IconName, type PixelIconData } from './icons';

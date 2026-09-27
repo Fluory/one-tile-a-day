@@ -2,7 +2,7 @@
   "name": "one-tile-a-day",
   "version": "0.1.0",
   "private": true,
-  "description": "A pixel island that grows by exactly one tile every day \u2013 one commit, one element, one line of lore.",
+  "description": "A pixel island that grows by exactly one tile every day – one commit, one element, one line of lore.",
   "license": "MIT",
   "type": "module",
   "engines": {
@@ -37,6 +37,7 @@
     "next": "^16.3.6",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "remark-gfm": "^4.0.1",
     "three": "^0.186.1",
     "zod": "^4.6.5",
     "zustand": "^5.0.15"

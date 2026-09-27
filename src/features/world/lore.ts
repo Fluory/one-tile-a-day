@@ -61,7 +61,7 @@ export function autoLore(input: LoreInput): string {
     case 'forest':
       return `The trees ${at} have grown so close together that they are a forest now.`;
     case 'tree':
-      return `${article(treeKind(input.variant))} young ${treeKind(input.variant)} takes root ${at}.`;
+      return `A young ${treeKind(input.variant)} takes root ${at}.`;
     case 'house':
       return `Someone gathers driftwood and stones and builds a small house ${at}.`;
     case 'path':

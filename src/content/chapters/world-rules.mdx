@@ -1,0 +1,32 @@
+Every day the routine asks the same question: *what could happen next?* The answer is never "anything". It is a list of changes that are legal right now, computed by [`rules.ts`](https://github.com/Fluory/one-tile-a-day/blob/main/src/features/world/rules.ts).
+
+## Three kinds of change
+
+- **Ground** – the terrain of one tile changes. Sand rises from the sea, sand turns into meadow, rock breaks through, trees grow into forest.
+- **Structures** – something is built on a free tile: a tree, a house, a path, a well, a jetty, a lighthouse …
+- **Life** – someone moves into a house, or an animal settles on the ground it likes.
+
+## Everything waits for something
+
+The interesting part are the dependencies. A few examples:
+
+- The very first meadow needs sand on all four sides – grass never grows on the coast.
+- A house needs land on three sides and keeps a tile of space to its neighbours. After the first house, new ones stay within three tiles of the village.
+- The **library** waits for three houses and wants to stand next to a path.
+- The **harbour** needs a sandy coast, three houses and a jetty nearby.
+- The **lighthouse** needs rock by the sea – and a house for its keeper.
+- **Ruins** only surface far away from every house, once the island is big enough to have forgotten something.
+
+Inhabitants have trades, and trades have conditions too: a keeper only arrives once there is a lighthouse, a farmer needs a field, a miller needs a windmill.
+
+<RuleTable />
+
+## The director
+
+Claude chooses the daily change, but the island also has a rule-based **director** that can decide on its own. It weighs what the island needs – room to build, people for empty houses, a first harbour once it becomes possible – adds a little variety (no three houses in a row) and draws one option. The director is deterministic: the same island on the same day always gets the same suggestion.
+
+The director is the safety net. Its suggestion is part of the daily plan, and if the routine cannot make a good choice, it lets the director decide. Those days are marked *auto* in the logbook.
+
+<Callout icon="🧪">
+  The rules are tested: a simulated year must be valid on every single day, a second change on the same day must fail, and a tampered log must be detected.
+</Callout>

@@ -10,6 +10,16 @@ export default defineConfig([
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     },
   },
+  {
+    // react-three-fiber is imperative by design: materials, textures and instance buffers are
+    // created once and mutated every frame. The React-Compiler purity rules do not apply there
+    // (the project does not use the compiler).
+    files: ['src/features/scene/**/*.tsx'],
+    rules: {
+      'react-hooks/immutability': 'off',
+      'react-hooks/refs': 'off',
+    },
+  },
   globalIgnores([
     '.next/**',
     'out/**',

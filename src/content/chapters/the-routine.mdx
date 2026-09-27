@@ -1,0 +1,54 @@
+At 08:47 in Heilbronn a Claude routine starts in the cloud. It has one job: add exactly one tile to the island and make exactly one commit. Here is what happens in those few minutes.
+
+## 1 · Is today already done?
+
+```bash
+npm run day -- status
+```
+
+```json
+{ "today": "2026-10-12", "day": 14, "lastDay": 13, "done": false }
+```
+
+If `done` is `true`, the routine stops without touching anything. Running twice is harmless – the second run finds today's day already recorded.
+
+## 2 · Read the island
+
+```bash
+npm run day -- plan
+```
+
+The plan is the routine's decision sheet: counts, the people who live on the island, the last seven days of lore, **every legal change** with a few good tiles for each – and the director's recommendation.
+
+## 3 · Choose and write
+
+Claude picks one change that makes a good next line in the story and writes the lore for it – one sentence, present tense, no links, no real people or brands. Then it applies the change:
+
+```bash
+npm run day -- apply --action lighthouse --x 36 --y 30 \
+  --lore "A white tower goes up on the eastern rocks; tonight a light will turn over the sea."
+```
+
+The code validates everything again. An illegal tile, a duplicate name or a lore line with a link is rejected – after two rejected attempts the routine hands the day to the director with `npm run day -- auto`.
+
+## 4 · One pull request, one commit
+
+The routine runs the full check (`npm run verify`), commits on a `claude/daily-…` branch and opens a pull request. When continuous integration is green, a workflow merges it with **squash** – so `main` receives exactly one commit per day:
+
+```text
+Day 14: Lighthouse on the eastern rocks
+
+A white tower goes up on the eastern rocks; tonight a light will turn over the sea.
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
+
+The merge only goes through if the pull request touches nothing but `world/world.json`, `world/isle.svg` and `LOGBOOK.md`. Code changes are made by humans, in separate pull requests.
+
+## 5 · The website grows too
+
+Every merge redeploys this site. The island you see in 3D, the map and the logbook are all rendered from the `world.json` of that commit.
+
+<Callout icon="🧯">
+  **When something breaks:** if CI is red, nothing is merged and the day stays empty – visible in the logbook. The routine never force-pushes, never edits history and never touches code.
+</Callout>
