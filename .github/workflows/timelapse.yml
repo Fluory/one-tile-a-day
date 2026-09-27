@@ -1,0 +1,35 @@
+# Monthly timelapse: renders every day so far into a GIF and attaches it to a GitHub release.
+# Releases add a tag, never a commit – the one-commit-per-day rule stays intact.
+name: Timelapse
+
+on:
+  schedule:
+    - cron: '23 7 1 * *' # 1st of every month, after the day's routine
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Render the timelapse
+        run: npm run media -- timelapse --source real --scale 3 --out timelapse.gif
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          day="$(npm run -s day -- status | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).lastDay))')"
+          tag="timelapse-$(date -u +%Y-%m)"
+          gh release delete "$tag" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "$tag" timelapse.gif \
+            --title "Timelapse $(date -u +'%B %Y') – day $day" \
+            --notes "The island from the sandbank to day $day, one frame per day. Rendered from world/world.json by the Timelapse workflow."

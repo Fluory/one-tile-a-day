@@ -2,7 +2,7 @@
   "name": "one-tile-a-day",
   "version": "0.1.0",
   "private": true,
-  "description": "A pixel island that grows by exactly one tile every day – one commit, one element, one line of lore.",
+  "description": "A pixel island that grows by exactly one tile every day \u2013 one commit, one element, one line of lore.",
   "license": "MIT",
   "type": "module",
   "engines": {
@@ -23,7 +23,8 @@
     "world:render": "tsx src/features/routine/cli.ts render",
     "verify:changed": "bash scripts/verify-changed.sh",
     "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run world:check && npm run build",
-    "verify:full": "npm run verify && npm run e2e"
+    "verify:full": "npm run verify && npm run e2e",
+    "media": "tsx src/features/media/cli.ts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

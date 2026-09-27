@@ -1,0 +1,13 @@
+[
+  { "name": "idea", "color": "c5def5", "description": "Unclear yet – needs shaping before work starts" },
+  { "name": "feature", "color": "0e8a16", "description": "New capability" },
+  { "name": "bug", "color": "d73a4a", "description": "Something does not work as expected" },
+  { "name": "tech-debt", "color": "fbca04", "description": "Structure or quality work without new behaviour" },
+  { "name": "security", "color": "b60205", "description": "Security or privacy relevant" },
+  { "name": "blocked", "color": "000000", "description": "Waiting on something outside this issue" },
+  { "name": "decision-needed", "color": "d876e3", "description": "A human decision is required" },
+  { "name": "ready", "color": "1d76db", "description": "Definition of Ready met – can be picked up" },
+  { "name": "ai", "color": "5319e7", "description": "Work on the AI routine or its prompt" },
+  { "name": "verify-full", "color": "006b75", "description": "Run the broad validation (E2E smoke) on this PR" },
+  { "name": "daily", "color": "ffd96a", "description": "The routine's daily world change" }
+]

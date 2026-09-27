@@ -1,0 +1,50 @@
+# Project profile – decides which controls and add-ons apply (SYSTEM.md §10).
+# Update via a dedicated PR when the maturity level changes.
+
+system:
+  fluory_system_version: "2.1" # = Entwicklungsplan/templates/VERSION when adopted
+  last_system_review: 2026-09-28
+
+project:
+  name: one-tile-a-day
+  type: web-app # world engine + daily routine + static website
+  stage: experiment # P0 – public art/open-source experiment, no accounts, no personal data
+
+repository:
+  visibility: public
+  public_reason: "deliberately open source – the commit history is the artwork"
+  sensitive_context: none
+
+governance:
+  # Only for the routine's daily world PR (world/world.json, world/isle.svg, LOGBOOK.md; one commit;
+  # CI green) – merged automatically by the daily-merge job. Every other PR follows the risk matrix.
+  p0_self_merge_exception: true
+  approved_by: "Fluory (setup request, 2026-09-28)"
+  approved_at: 2026-09-28
+
+agent:
+  sandbox: false # P0; the routine only runs the repo's own npm scripts
+
+budget:
+  frame: "0 € – GitHub Free (public), Vercel Hobby, Claude subscription for the daily routine"
+
+risk:
+  public_users: true # public website
+  personal_data: false # no accounts, no forms, no tracking; hosting logs only (Vercel)
+  company_data: false
+  authentication: false
+  persistent_data: false # the world lives in git
+  external_api: false
+  ai_or_rag: true # a Claude routine chooses the daily change and writes the lore
+
+addons:
+  security: false
+  datenschutz: false
+  datenbank: false
+  infrastruktur: false
+  betrieb: false
+  api: false
+  ki_rag: true # prompt versioned (ROUTINE.md), guard-rail evals in evals/, fail-closed CLI
+  releases: false
+  saas_auftrag: false
+  recht: true # public website: Impressum + Datenschutzerklärung
