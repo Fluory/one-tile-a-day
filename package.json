@@ -1,0 +1,60 @@
+{
+  "name": "one-tile-a-day",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A pixel island that grows by exactly one tile every day \u2013 one commit, one element, one line of lore.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "day": "tsx src/features/routine/cli.ts",
+    "world:check": "tsx src/features/routine/cli.ts check",
+    "world:render": "tsx src/features/routine/cli.ts render",
+    "verify:changed": "bash scripts/verify-changed.sh",
+    "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run world:check && npm run build",
+    "verify:full": "npm run verify && npm run e2e"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.3.6",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.1",
+    "zod": "^4.6.5",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/mdx": "^2.0.14",
+    "@types/node": "^22.20.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.6",
+    "gifenc": "^1.0.3",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.2"
+  }
+}
