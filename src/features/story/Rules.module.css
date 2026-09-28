@@ -1,0 +1,44 @@
+.rules {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--s-4);
+}
+
+.rule {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: var(--s-3);
+  padding: var(--s-5);
+  transition:
+    transform var(--dur-3) var(--ease-out),
+    box-shadow var(--dur-3) var(--ease-out);
+}
+
+.rule:hover {
+  transform: translateY(-6px) rotate(-0.4deg);
+  box-shadow: var(--shadow-lift);
+}
+
+.ruleIcon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-m);
+  background: color-mix(in oklab, var(--sea-3) 40%, transparent);
+  transition: transform var(--dur-3) var(--ease-spring);
+}
+
+.rule:hover .ruleIcon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.ruleName {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+}
+
+.ruleText {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}

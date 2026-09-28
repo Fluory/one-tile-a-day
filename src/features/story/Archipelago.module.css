@@ -1,0 +1,61 @@
+.islands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--s-4);
+}
+
+.island {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--s-5);
+  align-items: center;
+  padding: var(--s-4);
+  text-decoration: none;
+  transition: transform var(--dur-3) var(--ease-out);
+}
+
+.island:hover {
+  transform: translateY(-4px);
+}
+
+.islandThumb {
+  width: 140px;
+  aspect-ratio: 1;
+  border-radius: var(--r-m);
+  overflow: hidden;
+  background: linear-gradient(150deg, var(--sea-1), var(--grass));
+  display: grid;
+  place-items: center;
+}
+
+.islandThumb > span {
+  padding: var(--s-3);
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #fff;
+  opacity: 0.92;
+}
+
+.islandThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  image-rendering: pixelated;
+}
+
+.islandName {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+}
+
+@media (max-width: 520px) {
+  .island {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .islandThumb {
+    width: 96px;
+  }
+}

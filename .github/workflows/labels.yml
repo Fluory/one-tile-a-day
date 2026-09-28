@@ -1,0 +1,26 @@
+# Labels as code: .github/labels.json is the single source (fluory-system label set + project labels).
+name: Labels
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/labels.json']
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create or update labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node -e 'for (const l of require("./.github/labels.json")) console.log([l.name, l.color, l.description].join("\t"))' |
+          while IFS=$'\t' read -r name color description; do
+            gh label create "$name" --color "$color" --description "$description" --force
+          done

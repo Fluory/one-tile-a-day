@@ -1,0 +1,119 @@
+# Basis-CI after the fluory-system template (Entwicklungsplan/templates/base/ci.yml, SYSTEM.md §11)
+# plus one project-specific job: the daily world pull request is squash-merged automatically once
+# the check is green (exception register in docs/ARCHITEKTUR.md).
+#
+# No workflow-wide paths-ignore: the required check always reports, docs-only is detected inside.
+
+name: CI
+
+on:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect docs-only changes
+        id: diff
+        run: |
+          if git diff --name-only "origin/${{ github.base_ref }}...HEAD" | grep -qvE '^docs/|\.md$'; then
+            echo "code=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "code=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Docs guard
+        run: bash scripts/doku-check.sh
+
+      # The PR guard checks the maintainers' PR template. Pull requests from forks are completed by a
+      # maintainer before merging, so outside contributors are not blocked by it (CONTRIBUTING.md).
+      - name: PR guard
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_DRAFT: ${{ github.event.pull_request.draft }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          BASE_REF: origin/${{ github.base_ref }}
+        run: bash scripts/pr-check.sh
+
+      - name: Docs-only result
+        if: steps.diff.outputs.code == 'false'
+        run: echo "Docs only – docs guard green, base gate green."
+
+      - uses: actions/setup-node@v4
+        if: steps.diff.outputs.code == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+        if: steps.diff.outputs.code == 'true'
+
+      - run: npm run verify
+        if: steps.diff.outputs.code == 'true'
+
+      - name: Read stage from profile
+        id: profile
+        if: steps.diff.outputs.code == 'true'
+        run: echo "stage=$(sed -n 's/^[[:space:]]*stage:[[:space:]]*\([a-z]*\).*/\1/p' project-profile.yml | head -1)" >> "$GITHUB_OUTPUT"
+
+      - name: verify:full (E2E smoke)
+        if: steps.diff.outputs.code == 'true' && (steps.profile.outputs.stage == 'production' || contains(github.event.pull_request.labels.*.name, 'verify-full'))
+        run: |
+          npx playwright install --with-deps chromium
+          npm run verify:full
+
+  # One day, one commit: the routine's pull request is merged with squash as soon as the check is green.
+  daily-merge:
+    needs: check
+    if: >-
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.head_ref, 'claude/') &&
+      startsWith(github.event.pull_request.title, 'Day ') &&
+      !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Only world data, exactly one commit, a proper title
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          base="origin/${{ github.base_ref }}"
+          echo "$TITLE" | grep -qE '^Day [0-9]+: .{3,80}$' || { echo "::error::title must be 'Day N: …'"; exit 1; }
+          changed="$(git diff --name-only "$base...$HEAD_SHA")"
+          printf 'changed:\n%s\n' "$changed"
+          if printf '%s\n' "$changed" | grep -vqE '^(world/world\.json|world/isle\.svg|LOGBOOK\.md)$'; then
+            echo "::error::a daily pull request may only change world/world.json, world/isle.svg and LOGBOOK.md"
+            exit 1
+          fi
+          [ "$(git rev-list --count "$base..$HEAD_SHA")" = "1" ] || { echo "::error::a daily pull request contains exactly one commit"; exit 1; }
+
+      - name: Squash-merge the day
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          TITLE: ${{ github.event.pull_request.title }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          body="$(git log -1 --format=%b "$HEAD_SHA")"
+          gh pr merge "$PR" --squash --delete-branch --subject "$TITLE" --body "$body"

@@ -1,0 +1,155 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  align-items: end;
+  padding: 120px 0 clamp(32px, 6vh, 72px);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(70% 60% at 12% 88%, color-mix(in oklab, var(--paper) 78%, transparent) 0%, transparent 70%),
+    linear-gradient(0deg, color-mix(in oklab, var(--paper) 45%, transparent) 0%, transparent 45%);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: var(--s-6);
+  align-items: end;
+}
+
+.heroCopy {
+  display: grid;
+  gap: var(--s-5);
+  align-content: end;
+}
+
+.heroTitle {
+  font-size: var(--step-7);
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+  font-weight: 460;
+}
+
+.heroTitle em {
+  font-style: italic;
+  font-weight: 380;
+  color: var(--accent);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+
+.today {
+  padding: var(--s-5);
+  display: grid;
+  gap: var(--s-3);
+  max-width: 400px;
+  justify-self: end;
+}
+
+.todayHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.todayTitle {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  line-height: 1.1;
+}
+
+.todayLore {
+  color: var(--ink-soft);
+}
+
+.todayMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--line);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
+.todayMeta time {
+  font-family: var(--font-mono);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.scrollCue {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  translate: -50% 0;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  font-family: var(--font-pixel);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+.scrollCue span {
+  width: 2px;
+  height: 36px;
+  border-radius: 2px;
+  background: linear-gradient(var(--ink-faint), transparent);
+  animation: cue 2s var(--ease-in-out) infinite;
+  transform-origin: top;
+}
+
+@keyframes cue {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    align-items: start;
+    padding-top: 108px;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--paper) 80%, transparent) 0%,
+      color-mix(in oklab, var(--paper) 55%, transparent) 42%,
+      transparent 62%
+    );
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    align-content: start;
+  }
+
+  .today {
+    justify-self: stretch;
+    max-width: none;
+    margin-top: 44svh;
+  }
+}

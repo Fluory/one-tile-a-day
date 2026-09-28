@@ -1,0 +1,105 @@
+.routine {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 5vw, 72px);
+  align-items: start;
+}
+
+.steps {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-3);
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  left: 27px;
+  top: 28px;
+  bottom: 28px;
+  width: 2px;
+  background: linear-gradient(var(--sea-2), var(--grass), var(--accent));
+  opacity: 0.5;
+}
+
+.step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: var(--s-4);
+  align-items: start;
+  padding: var(--s-4);
+}
+
+.stepNo {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  font-family: var(--font-pixel);
+  font-size: 0.78rem;
+  background: var(--paper);
+  box-shadow:
+    0 0 0 1px var(--line),
+    0 8px 18px -10px rgb(0 0 0 / 0.35);
+  position: relative;
+  z-index: 1;
+}
+
+.stepTitle {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.stepText {
+  color: var(--ink-soft);
+  font-size: 0.97rem;
+}
+
+.commit {
+  position: sticky;
+  top: 110px;
+  padding: var(--s-5);
+  display: grid;
+  gap: var(--s-4);
+}
+
+.terminal {
+  margin: 0;
+  padding: var(--s-5);
+  border-radius: var(--r-m);
+  background: #0e1a24;
+  color: #d8e6ee;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.terminal .prompt {
+  color: #7fd0d4;
+}
+
+.terminal .ok {
+  color: #9be07a;
+}
+
+.terminal .dim {
+  color: #6f8796;
+}
+
+@media (max-width: 900px) {
+  .routine {
+    grid-template-columns: 1fr;
+  }
+
+  .commit {
+    position: relative;
+    top: 0;
+  }
+}

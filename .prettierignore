@@ -1,0 +1,17 @@
+# generated world data and chronicle – written by `npm run day`
+world/
+LOGBOOK.md
+RULES.md
+# prose and MDX keep their hand formatting
+*.md
+*.mdx
+# tooling output
+.next/
+node_modules/
+coverage/
+playwright-report/
+test-results/
+tmp/
+package-lock.json
+# system files keep the template formatting (doku-check parses them)
+project-profile.yml
