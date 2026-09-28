@@ -9,7 +9,7 @@ import { AnimatedThings } from './Animated';
 import { Blocks } from './Blocks';
 import { CameraRig } from './CameraRig';
 import { clock } from './clock';
-import { elementBlocks } from './blocks';
+import { elementBlocks } from './elementBlocks';
 import { landBounds, paletteAtDay, seasonAtDay, tileHistories } from './model';
 import { Sea } from './Sea';
 import { Sky } from './Sky';
