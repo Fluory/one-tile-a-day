@@ -2,7 +2,7 @@
 # Update via a dedicated PR when the maturity level changes.
 
 system:
-  fluory_system_version: '2.1' # = Entwicklungsplan/templates/VERSION when adopted
+  fluory_system_version: "2.1" # = Entwicklungsplan/templates/VERSION when adopted
   last_system_review: 2026-09-28
 
 project:

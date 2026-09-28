@@ -23,9 +23,18 @@
   aspect-ratio: 1;
   border-radius: var(--r-m);
   overflow: hidden;
-  background: var(--sea-1);
+  background: linear-gradient(150deg, var(--sea-1), var(--grass));
   display: grid;
   place-items: center;
+}
+
+.islandThumb > span {
+  padding: var(--s-3);
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #fff;
+  opacity: 0.92;
 }
 
 .islandThumb img {

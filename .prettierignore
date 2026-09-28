@@ -13,3 +13,5 @@ playwright-report/
 test-results/
 tmp/
 package-lock.json
+# system files keep the template formatting (doku-check parses them)
+project-profile.yml
