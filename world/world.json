@@ -36,7 +36,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -72,6 +72,7 @@
   ],
   "elements": [],
   "days": [
-    {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"}
+    {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
+    {"day":1,"date":"2026-09-29","action":"land","x":33,"y":31,"title":"The sandbank stretches north-east","lore":"At low tide a new strip of sand rises off the north-east coast, and the sandbank is a little less alone.","source":"claude","terrain":{"from":"water","to":"sand"}}
   ]
 }
