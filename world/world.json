@@ -70,10 +70,13 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   ],
-  "elements": [],
+  "elements": [
+    {"id":"e1","day":3,"type":"tree","x":31,"y":32,"variant":0}
+  ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
     {"day":1,"date":"2026-09-29","action":"land","x":33,"y":31,"title":"The sandbank stretches north-east","lore":"At low tide a new strip of sand rises off the north-east coast, and the sandbank is a little less alone.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":2,"date":"2026-09-30","action":"meadow","x":31,"y":32,"title":"The first grass on the western dunes","lore":"Between the dunes, sheltered from the wind, a first patch of green grass takes root in the sand.","source":"claude","terrain":{"from":"sand","to":"grass"}}
+    {"day":2,"date":"2026-09-30","action":"meadow","x":31,"y":32,"title":"The first grass on the western dunes","lore":"Between the dunes, sheltered from the wind, a first patch of green grass takes root in the sand.","source":"claude","terrain":{"from":"sand","to":"grass"}},
+    {"day":3,"date":"2026-10-01","action":"tree","x":31,"y":32,"title":"A sapling in the young meadow","lore":"In the middle of the new grass a single sapling unfolds its first leaves, already leaning a little away from the sea wind.","source":"claude","element":"e1"}
   ]
 }
