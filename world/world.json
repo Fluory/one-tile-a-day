@@ -37,7 +37,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -80,6 +80,7 @@
     {"day":2,"date":"2026-09-30","action":"meadow","x":31,"y":32,"title":"The first grass on the western dunes","lore":"Between the dunes, sheltered from the wind, a first patch of green grass takes root in the sand.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":3,"date":"2026-10-01","action":"tree","x":31,"y":32,"title":"A sapling in the young meadow","lore":"In the middle of the new grass a single sapling unfolds its first leaves, already leaning a little away from the sea wind.","source":"claude","element":"e1"},
     {"day":4,"date":"2026-10-02","action":"animal","x":33,"y":31,"title":"A gull lands on the north-east shore","lore":"A grey gull drifts in on the morning wind, folds its wings on the new sand and decides, for now, to stay.","source":"claude","element":"e2"},
-    {"day":5,"date":"2026-10-03","action":"land","x":33,"y":33,"title":"New sand off the south-east coast","lore":"Overnight the tide leaves a fresh crescent of sand in the south-east, and the gull walks its whole length before breakfast.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":5,"date":"2026-10-03","action":"land","x":33,"y":33,"title":"New sand off the south-east coast","lore":"Overnight the tide leaves a fresh crescent of sand in the south-east, and the gull walks its whole length before breakfast.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":6,"date":"2026-10-04","action":"meadow","x":32,"y":32,"title":"The meadow crosses to the eastern dunes","lore":"The grass creeps east overnight, and now the sapling stands at the edge of a meadow two tiles wide.","source":"claude","terrain":{"from":"sand","to":"grass"}}
   ]
 }
