@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 8** · 12 tiles of land · 0 houses · 0 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 9** · 12 tiles of land · 0 houses · 0 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 9** · 7 Oct · 🪨 **The first stone on the south-west point** — On the south-west point a dark stone breaks through the sand, and the waves now have something to talk to.
 - **Day 8** · 6 Oct · 🏝️ **A sandbar in the north-west** — A pale sandbar surfaces off the north-west coast, still wet and shining, and the gull is the first to leave footprints on it.
 - **Day 7** · 5 Oct · 🏝️ **A sandy point in the south-west** — In the south-west a low sandy point slips out of the water, and the waves begin to curl around it in a new way.
 - **Day 6** · 4 Oct · 🌿 **The meadow crosses to the eastern dunes** — The grass creeps east overnight, and now the sapling stands at the edge of a meadow two tiles wide.
