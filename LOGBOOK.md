@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 11** · 13 tiles of land · 0 houses · 0 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 12** · 14 tiles of land · 0 houses · 0 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 12** · 10 Oct · 🏝️ **The north coast grows wider** — Beside yesterday's grass a new strip of sand rises off the north coast, and the small island stretches a little further toward the cold.
 - **Day 11** · 9 Oct · 🌿 **Grass on the north-western dunes** — The meadow spreads north-west across the dunes, and the sand there now holds the evening dew a little longer.
 - **Day 10** · 8 Oct · 🏝️ **The north shore reaches out** — On the north side a broad tongue of sand rises at dawn, and from its tip the whole small island can be seen at once.
 - **Day 9** · 7 Oct · 🪨 **The first stone on the south-west point** — On the south-west point a dark stone breaks through the sand, and the waves now have something to talk to.
