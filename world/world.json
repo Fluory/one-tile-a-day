@@ -36,7 +36,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -87,6 +87,7 @@
     {"day":9,"date":"2026-10-07","action":"rock","x":30,"y":33,"title":"The first stone on the south-west point","lore":"On the south-west point a dark stone breaks through the sand, and the waves now have something to talk to.","source":"claude","terrain":{"from":"sand","to":"rock"}},
     {"day":10,"date":"2026-10-08","action":"land","x":31,"y":30,"title":"The north shore reaches out","lore":"On the north side a broad tongue of sand rises at dawn, and from its tip the whole small island can be seen at once.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":11,"date":"2026-10-09","action":"meadow","x":31,"y":31,"title":"Grass on the north-western dunes","lore":"The meadow spreads north-west across the dunes, and the sand there now holds the evening dew a little longer.","source":"claude","terrain":{"from":"sand","to":"grass"}},
-    {"day":12,"date":"2026-10-10","action":"land","x":32,"y":30,"title":"The north coast grows wider","lore":"Beside yesterday's grass a new strip of sand rises off the north coast, and the small island stretches a little further toward the cold.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":12,"date":"2026-10-10","action":"land","x":32,"y":30,"title":"The north coast grows wider","lore":"Beside yesterday's grass a new strip of sand rises off the north coast, and the small island stretches a little further toward the cold.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":13,"date":"2026-10-11","action":"meadow","x":32,"y":31,"title":"Green on the north-eastern dunes","lore":"The grass finds the north-eastern dunes, and now a small green field lies at the island's centre, ringed by sand on every side.","source":"claude","terrain":{"from":"sand","to":"grass"}}
   ]
 }
