@@ -72,7 +72,8 @@
   ],
   "elements": [
     {"id":"e1","day":3,"type":"tree","x":31,"y":32,"variant":0},
-    {"id":"e2","day":4,"type":"animal","x":33,"y":31,"variant":0,"role":"gull"}
+    {"id":"e2","day":4,"type":"animal","x":33,"y":31,"variant":0,"role":"gull"},
+    {"id":"e3","day":14,"type":"house","x":32,"y":31,"variant":0}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -88,6 +89,7 @@
     {"day":10,"date":"2026-10-08","action":"land","x":31,"y":30,"title":"The north shore reaches out","lore":"On the north side a broad tongue of sand rises at dawn, and from its tip the whole small island can be seen at once.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":11,"date":"2026-10-09","action":"meadow","x":31,"y":31,"title":"Grass on the north-western dunes","lore":"The meadow spreads north-west across the dunes, and the sand there now holds the evening dew a little longer.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":12,"date":"2026-10-10","action":"land","x":32,"y":30,"title":"The north coast grows wider","lore":"Beside yesterday's grass a new strip of sand rises off the north coast, and the small island stretches a little further toward the cold.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":13,"date":"2026-10-11","action":"meadow","x":32,"y":31,"title":"Green on the north-eastern dunes","lore":"The grass finds the north-eastern dunes, and now a small green field lies at the island's centre, ringed by sand on every side.","source":"claude","terrain":{"from":"sand","to":"grass"}}
+    {"day":13,"date":"2026-10-11","action":"meadow","x":32,"y":31,"title":"Green on the north-eastern dunes","lore":"The grass finds the north-eastern dunes, and now a small green field lies at the island's centre, ringed by sand on every side.","source":"claude","terrain":{"from":"sand","to":"grass"}},
+    {"day":14,"date":"2026-10-12","action":"house","x":32,"y":31,"title":"The first house in the meadow","lore":"In the north-eastern meadow a small house with a grass roof appears, its one window turned toward the sapling and the sea.","source":"claude","element":"e3"}
   ]
 }
