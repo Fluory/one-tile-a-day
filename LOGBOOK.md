@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 14** · 14 tiles of land · 1 houses · 0 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 15** · 14 tiles of land · 1 houses · 1 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 15** · 13 Oct · 🧑 **Maren, the first islander** — Maren, a storyteller, moves into the house in the meadow and spends her first evening telling the gull how the sandbank became an island.
 - **Day 14** · 12 Oct · 🏠 **The first house in the meadow** — In the north-eastern meadow a small house with a grass roof appears, its one window turned toward the sapling and the sea.
 - **Day 13** · 11 Oct · 🌿 **Green on the north-eastern dunes** — The grass finds the north-eastern dunes, and now a small green field lies at the island's centre, ringed by sand on every side.
 - **Day 12** · 10 Oct · 🏝️ **The north coast grows wider** — Beside yesterday's grass a new strip of sand rises off the north coast, and the small island stretches a little further toward the cold.
