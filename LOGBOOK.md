@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 19** · 15 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 20** · 15 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 20** · 18 Oct · 🪵 **A small jetty on the east coast** — A few weathered planks reach into the water off the east coast, and the first jetty waits quietly for a boat to tie up.
 - **Day 19** · 17 Oct · 🏝️ **Sand gathers in the north-west corner** — A curl of sand settles into the north-west corner, and from Tove's lamp the island's outline looks a little rounder each night.
 - **Day 18** · 16 Oct · 🌳 **A second tree in the north-western meadow** — In the north-western meadow a second young tree takes hold, so the first sapling no longer stands alone against the autumn wind.
 - **Day 17** · 15 Oct · 🧑 **Tove comes to keep the light** — Tove arrives to keep the new lighthouse, shares the meadow house with Maren, and climbs the stairs each dusk to wake the lamp.
