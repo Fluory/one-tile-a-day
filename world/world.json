@@ -78,7 +78,8 @@
     {"id":"e5","day":16,"type":"lighthouse","x":30,"y":33,"variant":0},
     {"id":"e6","day":17,"type":"inhabitant","x":32,"y":31,"variant":1,"name":"Tove","role":"keeper","home":"e3"},
     {"id":"e7","day":18,"type":"tree","x":31,"y":31,"variant":2},
-    {"id":"e8","day":20,"type":"jetty","x":34,"y":32,"variant":1}
+    {"id":"e8","day":20,"type":"jetty","x":34,"y":32,"variant":1},
+    {"id":"e9","day":21,"type":"boat","x":35,"y":32,"variant":1}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -101,6 +102,7 @@
     {"day":17,"date":"2026-10-15","action":"inhabitant","x":32,"y":31,"title":"Tove comes to keep the light","lore":"Tove arrives to keep the new lighthouse, shares the meadow house with Maren, and climbs the stairs each dusk to wake the lamp.","source":"claude","element":"e6"},
     {"day":18,"date":"2026-10-16","action":"tree","x":31,"y":31,"title":"A second tree in the north-western meadow","lore":"In the north-western meadow a second young tree takes hold, so the first sapling no longer stands alone against the autumn wind.","source":"claude","element":"e7"},
     {"day":19,"date":"2026-10-17","action":"land","x":30,"y":30,"title":"Sand gathers in the north-west corner","lore":"A curl of sand settles into the north-west corner, and from Tove's lamp the island's outline looks a little rounder each night.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":20,"date":"2026-10-18","action":"jetty","x":34,"y":32,"title":"A small jetty on the east coast","lore":"A few weathered planks reach into the water off the east coast, and the first jetty waits quietly for a boat to tie up.","source":"claude","element":"e8"}
+    {"day":20,"date":"2026-10-18","action":"jetty","x":34,"y":32,"title":"A small jetty on the east coast","lore":"A few weathered planks reach into the water off the east coast, and the first jetty waits quietly for a boat to tie up.","source":"claude","element":"e8"},
+    {"day":21,"date":"2026-10-19","action":"boat","x":35,"y":32,"title":"A boat at the east jetty","lore":"A small blue boat now rocks beside the east jetty, its rope tied in a careful knot, and the planks no longer wait alone.","source":"claude","element":"e9"}
   ]
 }
