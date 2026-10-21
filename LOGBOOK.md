@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 22** · 15 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 23** · 16 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 23** · 21 Oct · 🏝️ **New sand in the north-east** — A fresh bank of sand rises in the north-east, and from the new boat Tove can now trace the whole curve of the shore.
 - **Day 22** · 20 Oct · 🌷 **A garden beside the meadow house** — Maren and Tove dig a small garden beside their house, and the first rows of autumn seeds go into the dark, damp soil.
 - **Day 21** · 19 Oct · ⛵ **A boat at the east jetty** — A small blue boat now rocks beside the east jetty, its rope tied in a careful knot, and the planks no longer wait alone.
 - **Day 20** · 18 Oct · 🪵 **A small jetty on the east coast** — A few weathered planks reach into the water off the east coast, and the first jetty waits quietly for a boat to tie up.
