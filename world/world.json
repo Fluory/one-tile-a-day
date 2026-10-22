@@ -39,7 +39,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -106,6 +106,7 @@
     {"day":20,"date":"2026-10-18","action":"jetty","x":34,"y":32,"title":"A small jetty on the east coast","lore":"A few weathered planks reach into the water off the east coast, and the first jetty waits quietly for a boat to tie up.","source":"claude","element":"e8"},
     {"day":21,"date":"2026-10-19","action":"boat","x":35,"y":32,"title":"A boat at the east jetty","lore":"A small blue boat now rocks beside the east jetty, its rope tied in a careful knot, and the planks no longer wait alone.","source":"claude","element":"e9"},
     {"day":22,"date":"2026-10-20","action":"garden","x":32,"y":32,"title":"A garden beside the meadow house","lore":"Maren and Tove dig a small garden beside their house, and the first rows of autumn seeds go into the dark, damp soil.","source":"claude","element":"e10"},
-    {"day":23,"date":"2026-10-21","action":"land","x":33,"y":30,"title":"New sand in the north-east","lore":"A fresh bank of sand rises in the north-east, and from the new boat Tove can now trace the whole curve of the shore.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":23,"date":"2026-10-21","action":"land","x":33,"y":30,"title":"New sand in the north-east","lore":"A fresh bank of sand rises in the north-east, and from the new boat Tove can now trace the whole curve of the shore.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":24,"date":"2026-10-22","action":"land","x":31,"y":34,"title":"A sandbar below the south coast","lore":"Below the south coast a low sandbar surfaces at dawn, and the lighthouse beam now finds a little more shore on every turn.","source":"claude","terrain":{"from":"water","to":"sand"}}
   ]
 }
