@@ -80,7 +80,8 @@
     {"id":"e7","day":18,"type":"tree","x":31,"y":31,"variant":2},
     {"id":"e8","day":20,"type":"jetty","x":34,"y":32,"variant":1},
     {"id":"e9","day":21,"type":"boat","x":35,"y":32,"variant":1},
-    {"id":"e10","day":22,"type":"garden","x":32,"y":32,"variant":1}
+    {"id":"e10","day":22,"type":"garden","x":32,"y":32,"variant":1},
+    {"id":"e11","day":26,"type":"field","x":31,"y":33,"variant":0}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -108,6 +109,7 @@
     {"day":22,"date":"2026-10-20","action":"garden","x":32,"y":32,"title":"A garden beside the meadow house","lore":"Maren and Tove dig a small garden beside their house, and the first rows of autumn seeds go into the dark, damp soil.","source":"claude","element":"e10"},
     {"day":23,"date":"2026-10-21","action":"land","x":33,"y":30,"title":"New sand in the north-east","lore":"A fresh bank of sand rises in the north-east, and from the new boat Tove can now trace the whole curve of the shore.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":24,"date":"2026-10-22","action":"land","x":31,"y":34,"title":"A sandbar below the south coast","lore":"Below the south coast a low sandbar surfaces at dawn, and the lighthouse beam now finds a little more shore on every turn.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":25,"date":"2026-10-23","action":"meadow","x":31,"y":33,"title":"Grass reaches toward the lighthouse","lore":"The meadow creeps south toward the lighthouse, and on her way to the lamp each evening Tove now walks on soft grass.","source":"claude","terrain":{"from":"sand","to":"grass"}}
+    {"day":25,"date":"2026-10-23","action":"meadow","x":31,"y":33,"title":"Grass reaches toward the lighthouse","lore":"The meadow creeps south toward the lighthouse, and on her way to the lamp each evening Tove now walks on soft grass.","source":"claude","terrain":{"from":"sand","to":"grass"}},
+    {"day":26,"date":"2026-10-24","action":"field","x":31,"y":33,"title":"The first field by the lighthouse","lore":"On the new grass near the lighthouse Maren and Tove turn the first field, and the furrows lie straight and dark in the low autumn sun.","source":"claude","element":"e11"}
   ]
 }

@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 25** · 17 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 26** · 17 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 26** · 24 Oct · 🌾 **The first field by the lighthouse** — On the new grass near the lighthouse Maren and Tove turn the first field, and the furrows lie straight and dark in the low autumn sun.
 - **Day 25** · 23 Oct · 🌿 **Grass reaches toward the lighthouse** — The meadow creeps south toward the lighthouse, and on her way to the lamp each evening Tove now walks on soft grass.
 - **Day 24** · 22 Oct · 🏝️ **A sandbar below the south coast** — Below the south coast a low sandbar surfaces at dawn, and the lighthouse beam now finds a little more shore on every turn.
 - **Day 23** · 21 Oct · 🏝️ **New sand in the north-east** — A fresh bank of sand rises in the north-east, and from the new boat Tove can now trace the whole curve of the shore.
