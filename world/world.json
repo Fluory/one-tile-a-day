@@ -38,7 +38,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^,..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -111,6 +111,7 @@
     {"day":24,"date":"2026-10-22","action":"land","x":31,"y":34,"title":"A sandbar below the south coast","lore":"Below the south coast a low sandbar surfaces at dawn, and the lighthouse beam now finds a little more shore on every turn.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":25,"date":"2026-10-23","action":"meadow","x":31,"y":33,"title":"Grass reaches toward the lighthouse","lore":"The meadow creeps south toward the lighthouse, and on her way to the lamp each evening Tove now walks on soft grass.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":26,"date":"2026-10-24","action":"field","x":31,"y":33,"title":"The first field by the lighthouse","lore":"On the new grass near the lighthouse Maren and Tove turn the first field, and the furrows lie straight and dark in the low autumn sun.","source":"claude","element":"e11"},
-    {"day":27,"date":"2026-10-25","action":"land","x":32,"y":34,"title":"The south shore widens","lore":"Beside the southern sandbar a second strip of sand rises, and the low tide now leaves a wide pale beach below the lighthouse.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":27,"date":"2026-10-25","action":"land","x":32,"y":34,"title":"The south shore widens","lore":"Beside the southern sandbar a second strip of sand rises, and the low tide now leaves a wide pale beach below the lighthouse.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":28,"date":"2026-10-26","action":"meadow","x":32,"y":33,"title":"Grass beside the first field","lore":"The grass spreads beside the new field, and the island's green heart now reaches almost to the southern beach.","source":"claude","terrain":{"from":"sand","to":"grass"}}
   ]
 }
