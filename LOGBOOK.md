@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 29** · 18 tiles of land · 1 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 30** · 18 tiles of land · 2 houses · 2 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 30** · 28 Oct · 🏠 **A second house on the north shore** — On the north shore a second small house goes up, its door facing the meadow, ready for whoever the boat brings next.
 - **Day 29** · 27 Oct · 🌳 **A third tree by the field** — A third young tree takes root at the edge of the field, where its leaves will one day shade the furrows on warm afternoons.
 - **Day 28** · 26 Oct · 🌿 **Grass beside the first field** — The grass spreads beside the new field, and the island's green heart now reaches almost to the southern beach.
 - **Day 27** · 25 Oct · 🏝️ **The south shore widens** — Beside the southern sandbar a second strip of sand rises, and the low tide now leaves a wide pale beach below the lighthouse.
