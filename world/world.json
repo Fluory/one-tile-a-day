@@ -84,7 +84,8 @@
     {"id":"e11","day":26,"type":"field","x":31,"y":33,"variant":0},
     {"id":"e12","day":29,"type":"tree","x":32,"y":33,"variant":1},
     {"id":"e13","day":30,"type":"house","x":31,"y":30,"variant":1},
-    {"id":"e14","day":31,"type":"inhabitant","x":31,"y":30,"variant":1,"name":"Ilka","role":"farmer","home":"e13"}
+    {"id":"e14","day":31,"type":"inhabitant","x":31,"y":30,"variant":1,"name":"Ilka","role":"farmer","home":"e13"},
+    {"id":"e15","day":32,"type":"well","x":33,"y":30,"variant":0}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -118,6 +119,7 @@
     {"day":28,"date":"2026-10-26","action":"meadow","x":32,"y":33,"title":"Grass beside the first field","lore":"The grass spreads beside the new field, and the island's green heart now reaches almost to the southern beach.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":29,"date":"2026-10-27","action":"tree","x":32,"y":33,"title":"A third tree by the field","lore":"A third young tree takes root at the edge of the field, where its leaves will one day shade the furrows on warm afternoons.","source":"claude","element":"e12"},
     {"day":30,"date":"2026-10-28","action":"house","x":31,"y":30,"title":"A second house on the north shore","lore":"On the north shore a second small house goes up, its door facing the meadow, ready for whoever the boat brings next.","source":"claude","element":"e13"},
-    {"day":31,"date":"2026-10-29","action":"inhabitant","x":31,"y":30,"title":"Ilka the farmer arrives by boat","lore":"Ilka steps off the little boat with a sack of seed, moves into the north shore house, and walks straight out to see the field.","source":"claude","element":"e14"}
+    {"day":31,"date":"2026-10-29","action":"inhabitant","x":31,"y":30,"title":"Ilka the farmer arrives by boat","lore":"Ilka steps off the little boat with a sack of seed, moves into the north shore house, and walks straight out to see the field.","source":"claude","element":"e14"},
+    {"day":32,"date":"2026-10-30","action":"well","x":33,"y":30,"title":"A well between the two houses","lore":"The three islanders dig a stone well near the north-east shore, and the first bucket comes up cold, clear and only a little salty.","source":"claude","element":"e15"}
   ]
 }
