@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 32** · 18 tiles of land · 2 houses · 3 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 33** · 18 tiles of land · 2 houses · 3 inhabitants · 1 animals · founded 28 Sep 2026
 
 ## October 2026
 
+- **Day 33** · 31 Oct · 🛤️ **The first path to the well** — Daily trips for water wear a narrow path from the north shore house to the well, and the sand there is now packed firm by footsteps.
 - **Day 32** · 30 Oct · 🪣 **A well between the two houses** — The three islanders dig a stone well near the north-east shore, and the first bucket comes up cold, clear and only a little salty.
 - **Day 31** · 29 Oct · 🧑 **Ilka the farmer arrives by boat** — Ilka steps off the little boat with a sack of seed, moves into the north shore house, and walks straight out to see the field.
 - **Day 30** · 28 Oct · 🏠 **A second house on the north shore** — On the north shore a second small house goes up, its door facing the meadow, ready for whoever the boat brings next.
