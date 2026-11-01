@@ -4,7 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 33** · 18 tiles of land · 2 houses · 3 inhabitants · 1 animals · founded 28 Sep 2026
+**Day 34** · 18 tiles of land · 2 houses · 3 inhabitants · 2 animals · founded 28 Sep 2026
+
+## November 2026
+
+- **Day 34** · 1 Nov · 🐑 **A cat on the south-east shore** — A grey cat turns up on the south-east shore one cold morning, sniffs at the boat, and decides the island will do.
 
 ## October 2026
 
