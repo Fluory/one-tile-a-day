@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 35** · 18 tiles of land · 2 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 36** · 19 tiles of land · 2 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 36** · 3 Nov · 🏝️ **Sand below the south-west rocks** — Below the lighthouse rocks a new strip of sand rises, and the south-west point grows gently wider against the November swell.
 - **Day 35** · 2 Nov · 🧑 **Rune, the island's first fisher** — Rune moves into the north shore house beside Ilka and rows the blue boat out at dawn, coming home with the island's first catch.
 - **Day 34** · 1 Nov · 🐑 **A cat on the south-east shore** — A grey cat turns up on the south-east shore one cold morning, sniffs at the boat, and decides the island will do.
 
