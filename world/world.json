@@ -39,7 +39,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -127,6 +127,7 @@
     {"day":33,"date":"2026-10-31","action":"path","x":32,"y":30,"title":"The first path to the well","lore":"Daily trips for water wear a narrow path from the north shore house to the well, and the sand there is now packed firm by footsteps.","source":"claude","element":"e16"},
     {"day":34,"date":"2026-11-01","action":"animal","x":33,"y":33,"title":"A cat on the south-east shore","lore":"A grey cat turns up on the south-east shore one cold morning, sniffs at the boat, and decides the island will do.","source":"claude","element":"e17"},
     {"day":35,"date":"2026-11-02","action":"inhabitant","x":31,"y":30,"title":"Rune, the island's first fisher","lore":"Rune moves into the north shore house beside Ilka and rows the blue boat out at dawn, coming home with the island's first catch.","source":"claude","element":"e18"},
-    {"day":36,"date":"2026-11-03","action":"land","x":30,"y":34,"title":"Sand below the south-west rocks","lore":"Below the lighthouse rocks a new strip of sand rises, and the south-west point grows gently wider against the November swell.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":36,"date":"2026-11-03","action":"land","x":30,"y":34,"title":"Sand below the south-west rocks","lore":"Below the lighthouse rocks a new strip of sand rises, and the south-west point grows gently wider against the November swell.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":37,"date":"2026-11-04","action":"land","x":33,"y":34,"title":"A beach for the cat in the south-east","lore":"A low beach rises in the south-east corner, and the grey cat is first to walk its wet edge, leaving a line of small prints.","source":"claude","terrain":{"from":"water","to":"sand"}}
   ]
 }
