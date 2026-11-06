@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 38** · 20 tiles of land · 2 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 39** · 21 tiles of land · 2 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 39** · 6 Nov · 🏝️ **Sand off the west coast** — Off the west coast a new bank of sand rises, and the low sun now sets over a beach the islanders have never walked before.
 - **Day 38** · 5 Nov · 🛤️ **The path runs on past the well** — The path from the well runs one step further south, so that on wet evenings the islanders can carry their buckets home dry-footed.
 - **Day 37** · 4 Nov · 🏝️ **A beach for the cat in the south-east** — A low beach rises in the south-east corner, and the grey cat is first to walk its wet edge, leaving a line of small prints.
 - **Day 36** · 3 Nov · 🏝️ **Sand below the south-west rocks** — Below the lighthouse rocks a new strip of sand rises, and the south-west point grows gently wider against the November swell.
