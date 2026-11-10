@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 42** · 21 tiles of land · 3 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 43** · 21 tiles of land · 3 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 43** · 10 Nov · ⚓ **A harbour on the south-east shore** — Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.
 - **Day 42** · 9 Nov · 🏠 **A third house by the well** — A third house rises beside the well, its door still unpainted, and every evening the islanders wonder aloud who the sea will bring to live in it.
 - **Day 41** · 8 Nov · 🌾 **Ilka ploughs the western meadow** — Ilka turns the young western meadow into a second field, and the gull follows her furrows all afternoon in hope of worms.
 - **Day 40** · 7 Nov · 🌿 **Grass behind the new beach** — Grass creeps west across the young sand, and by evening the gull rests on a meadow that was open water a week ago.
