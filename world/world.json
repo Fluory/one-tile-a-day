@@ -92,7 +92,8 @@
     {"id":"e19","day":38,"type":"path","x":33,"y":31,"variant":0},
     {"id":"e20","day":41,"type":"field","x":30,"y":32,"variant":0},
     {"id":"e21","day":42,"type":"house","x":33,"y":32,"variant":1},
-    {"id":"e22","day":43,"type":"harbor","x":33,"y":34,"variant":0}
+    {"id":"e22","day":43,"type":"harbor","x":33,"y":34,"variant":0},
+    {"id":"e23","day":44,"type":"inhabitant","x":33,"y":32,"variant":0,"name":"Dagny","role":"carpenter","home":"e21"}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -138,6 +139,7 @@
     {"day":40,"date":"2026-11-07","action":"meadow","x":30,"y":32,"title":"Grass behind the new beach","lore":"Grass creeps west across the young sand, and by evening the gull rests on a meadow that was open water a week ago.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":41,"date":"2026-11-08","action":"field","x":30,"y":32,"title":"Ilka ploughs the western meadow","lore":"Ilka turns the young western meadow into a second field, and the gull follows her furrows all afternoon in hope of worms.","source":"claude","element":"e20"},
     {"day":42,"date":"2026-11-09","action":"house","x":33,"y":32,"title":"A third house by the well","lore":"A third house rises beside the well, its door still unpainted, and every evening the islanders wonder aloud who the sea will bring to live in it.","source":"claude","element":"e21"},
-    {"day":43,"date":"2026-11-10","action":"harbor","x":33,"y":34,"title":"A harbour on the south-east shore","lore":"Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.","source":"claude","element":"e22"}
+    {"day":43,"date":"2026-11-10","action":"harbor","x":33,"y":34,"title":"A harbour on the south-east shore","lore":"Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.","source":"claude","element":"e22"},
+    {"day":44,"date":"2026-11-11","action":"inhabitant","x":33,"y":32,"title":"Dagny comes ashore at the new harbour","lore":"The first boat into the new harbour carries Dagny, a carpenter with salt in her hair, and by nightfall she has painted the door of the house by the well.","source":"claude","element":"e23"}
   ]
 }

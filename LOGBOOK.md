@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 43** · 21 tiles of land · 3 houses · 4 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 44** · 21 tiles of land · 3 houses · 5 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 44** · 11 Nov · 🧑 **Dagny comes ashore at the new harbour** — The first boat into the new harbour carries Dagny, a carpenter with salt in her hair, and by nightfall she has painted the door of the house by the well.
 - **Day 43** · 10 Nov · ⚓ **A harbour on the south-east shore** — Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.
 - **Day 42** · 9 Nov · 🏠 **A third house by the well** — A third house rises beside the well, its door still unpainted, and every evening the islanders wonder aloud who the sea will bring to live in it.
 - **Day 41** · 8 Nov · 🌾 **Ilka ploughs the western meadow** — Ilka turns the young western meadow into a second field, and the gull follows her furrows all afternoon in hope of worms.
