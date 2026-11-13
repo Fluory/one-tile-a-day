@@ -36,7 +36,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.^,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -141,6 +141,7 @@
     {"day":42,"date":"2026-11-09","action":"house","x":33,"y":32,"title":"A third house by the well","lore":"A third house rises beside the well, its door still unpainted, and every evening the islanders wonder aloud who the sea will bring to live in it.","source":"claude","element":"e21"},
     {"day":43,"date":"2026-11-10","action":"harbor","x":33,"y":34,"title":"A harbour on the south-east shore","lore":"Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.","source":"claude","element":"e22"},
     {"day":44,"date":"2026-11-11","action":"inhabitant","x":33,"y":32,"title":"Dagny comes ashore at the new harbour","lore":"The first boat into the new harbour carries Dagny, a carpenter with salt in her hair, and by nightfall she has painted the door of the house by the well.","source":"claude","element":"e23"},
-    {"day":45,"date":"2026-11-12","action":"land","x":29,"y":33,"title":"The west beach grows south","lore":"A grey November tide leaves new sand below the western beach, and Dagny walks it at dawn, gathering driftwood for her workbench.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":45,"date":"2026-11-12","action":"land","x":29,"y":33,"title":"The west beach grows south","lore":"A grey November tide leaves new sand below the western beach, and Dagny walks it at dawn, gathering driftwood for her workbench.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":46,"date":"2026-11-13","action":"land","x":29,"y":31,"title":"Sand in the north-west","lore":"Overnight a shoal surfaces off the north-west point, and Maren says it is the island stretching one arm toward the setting sun.","source":"claude","terrain":{"from":"water","to":"sand"}}
   ]
 }

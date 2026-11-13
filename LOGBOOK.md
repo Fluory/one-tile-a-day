@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 45** · 22 tiles of land · 3 houses · 5 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 46** · 23 tiles of land · 3 houses · 5 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 46** · 13 Nov · 🏝️ **Sand in the north-west** — Overnight a shoal surfaces off the north-west point, and Maren says it is the island stretching one arm toward the setting sun.
 - **Day 45** · 12 Nov · 🏝️ **The west beach grows south** — A grey November tide leaves new sand below the western beach, and Dagny walks it at dawn, gathering driftwood for her workbench.
 - **Day 44** · 11 Nov · 🧑 **Dagny comes ashore at the new harbour** — The first boat into the new harbour carries Dagny, a carpenter with salt in her hair, and by nightfall she has painted the door of the house by the well.
 - **Day 43** · 10 Nov · ⚓ **A harbour on the south-east shore** — Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.
