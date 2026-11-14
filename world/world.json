@@ -36,7 +36,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.^,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -142,6 +142,7 @@
     {"day":43,"date":"2026-11-10","action":"harbor","x":33,"y":34,"title":"A harbour on the south-east shore","lore":"Rune and Tove lay stone upon stone beside the jetty, and by dusk the island has a harbour where the boat can sleep out of the wind.","source":"claude","element":"e22"},
     {"day":44,"date":"2026-11-11","action":"inhabitant","x":33,"y":32,"title":"Dagny comes ashore at the new harbour","lore":"The first boat into the new harbour carries Dagny, a carpenter with salt in her hair, and by nightfall she has painted the door of the house by the well.","source":"claude","element":"e23"},
     {"day":45,"date":"2026-11-12","action":"land","x":29,"y":33,"title":"The west beach grows south","lore":"A grey November tide leaves new sand below the western beach, and Dagny walks it at dawn, gathering driftwood for her workbench.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":46,"date":"2026-11-13","action":"land","x":29,"y":31,"title":"Sand in the north-west","lore":"Overnight a shoal surfaces off the north-west point, and Maren says it is the island stretching one arm toward the setting sun.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":46,"date":"2026-11-13","action":"land","x":29,"y":31,"title":"Sand in the north-west","lore":"Overnight a shoal surfaces off the north-west point, and Maren says it is the island stretching one arm toward the setting sun.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":47,"date":"2026-11-14","action":"meadow","x":30,"y":31,"title":"Grass on the north-west shore","lore":"Sheltered now by the new sand, grass takes hold west of the meadow house, and Tove sets her chair there to watch the lamp-lit evening sea.","source":"claude","terrain":{"from":"sand","to":"grass"}}
   ]
 }
