@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 48** · 23 tiles of land · 3 houses · 5 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 49** · 23 tiles of land · 3 houses · 6 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 49** · 16 Nov · 🧑 **Hanno comes to tend the mill** — Hearing that the island has a windmill, Hanno the miller sails in with his sacks and sieves and takes the second room in Dagny's house by the well.
 - **Day 48** · 15 Nov · 🌬️ **A windmill above the fields** — Dagny raises a windmill on the new grass just north of Ilka's two fields, and in the first November gale its sails turn and grind the season's grain.
 - **Day 47** · 14 Nov · 🌿 **Grass on the north-west shore** — Sheltered now by the new sand, grass takes hold west of the meadow house, and Tove sets her chair there to watch the lamp-lit evening sea.
 - **Day 46** · 13 Nov · 🏝️ **Sand in the north-west** — Overnight a shoal surfaces off the north-west point, and Maren says it is the island stretching one arm toward the setting sun.
