@@ -95,7 +95,8 @@
     {"id":"e22","day":43,"type":"harbor","x":33,"y":34,"variant":0},
     {"id":"e23","day":44,"type":"inhabitant","x":33,"y":32,"variant":0,"name":"Dagny","role":"carpenter","home":"e21"},
     {"id":"e24","day":48,"type":"windmill","x":30,"y":31,"variant":0},
-    {"id":"e25","day":49,"type":"inhabitant","x":33,"y":32,"variant":0,"name":"Hanno","role":"miller","home":"e21"}
+    {"id":"e25","day":49,"type":"inhabitant","x":33,"y":32,"variant":0,"name":"Hanno","role":"miller","home":"e21"},
+    {"id":"e26","day":51,"type":"path","x":30,"y":30,"variant":0}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -148,6 +149,7 @@
     {"day":47,"date":"2026-11-14","action":"meadow","x":30,"y":31,"title":"Grass on the north-west shore","lore":"Sheltered now by the new sand, grass takes hold west of the meadow house, and Tove sets her chair there to watch the lamp-lit evening sea.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":48,"date":"2026-11-15","action":"windmill","x":30,"y":31,"title":"A windmill above the fields","lore":"Dagny raises a windmill on the new grass just north of Ilka's two fields, and in the first November gale its sails turn and grind the season's grain.","source":"claude","element":"e24"},
     {"day":49,"date":"2026-11-16","action":"inhabitant","x":33,"y":32,"title":"Hanno comes to tend the mill","lore":"Hearing that the island has a windmill, Hanno the miller sails in with his sacks and sieves and takes the second room in Dagny's house by the well.","source":"claude","element":"e25"},
-    {"day":50,"date":"2026-11-17","action":"land","x":29,"y":34,"title":"Sand beyond the lighthouse rocks","lore":"On the island's fiftieth day a new tongue of sand lies south-west of the lighthouse rocks, and Maren adds it to the tale she tells by the fire.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":50,"date":"2026-11-17","action":"land","x":29,"y":34,"title":"Sand beyond the lighthouse rocks","lore":"On the island's fiftieth day a new tongue of sand lies south-west of the lighthouse rocks, and Maren adds it to the tale she tells by the fire.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":51,"date":"2026-11-18","action":"path","x":30,"y":30,"title":"A path to the mill door","lore":"Hanno carries flour sacks past Ilka's door so often that a path packs hard into the sand beside the windmill, and Ilka swears she hears him whistling before dawn.","source":"claude","element":"e26"}
   ]
 }
