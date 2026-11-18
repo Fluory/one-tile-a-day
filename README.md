@@ -58,6 +58,8 @@ flowchart LR
 
 ## The website
 
+**Live:** [one-tile-a-day.vercel.app](https://one-tile-a-day.vercel.app)
+
 A Next.js site shows the island in 3D – one persistent WebGL canvas stays alive behind every page while
 you scroll through a timelapse, read the logbook or open a chapter. Day or night: at night the
 lighthouse turns on.
@@ -128,3 +130,9 @@ in 3D, als Karte mit Zeitleiste und im Logbuch.
 
 Code: [MIT](LICENSE) · Island (world data, images, logbook): [CC BY 4.0](world/LICENSE.md) ·
 Built on the [fluory development system](https://github.com/Fluory) – `AGENTS.md`, `docs/ARCHITEKTUR.md`.
+
+---
+
+Made by [Florian Hein](https://github.com/Fluory) in Heilbronn. The same way of working – rules in code,
+an AI routine inside guard rails, CI as the gate – is what I use to build software prototypes for
+companies: [see my website](https://final-portfolio-website-ten.vercel.app/en/).
