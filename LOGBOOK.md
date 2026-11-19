@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 51** · 24 tiles of land · 3 houses · 6 inhabitants · 2 animals · founded 28 Sep 2026
+**Day 52** · 25 tiles of land · 3 houses · 6 inhabitants · 2 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 52** · 19 Nov · 🏝️ **Sand at the end of the mill path** — Where Hanno's new path meets the water, the sea gives back a strip of sand, and he walks out each morning to read the wind before opening the mill.
 - **Day 51** · 18 Nov · 🛤️ **A path to the mill door** — Hanno carries flour sacks past Ilka's door so often that a path packs hard into the sand beside the windmill, and Ilka swears she hears him whistling before dawn.
 - **Day 50** · 17 Nov · 🏝️ **Sand beyond the lighthouse rocks** — On the island's fiftieth day a new tongue of sand lies south-west of the lighthouse rocks, and Maren adds it to the tale she tells by the fire.
 - **Day 49** · 16 Nov · 🧑 **Hanno comes to tend the mill** — Hearing that the island has a windmill, Hanno the miller sails in with his sacks and sieves and takes the second room in Dagny's house by the well.
