@@ -5,6 +5,10 @@ Only what changes **in the product** – the daily world changes live in [LOGBOO
 
 ## [Unreleased]
 
+### Security
+- Lockfile: `next` 16.3.6 → 16.4.6, `zod` and `source-map-js` patched (`npm audit fix`, no `package.json` change; one critical and two high advisories in production dependencies).
+- The daily auto-merge only merges the exact commit the check ran on (`--match-head-commit`); a later push to the pull request makes the merge fail instead of slipping through unchecked.
+
 ### Added
 - World engine: 64 × 64 tile map, 20 kinds of change with dependency rules, deterministic director, time travel (`worldAt`), history validation.
 - Pixel renderer for `world/isle.svg`: hand-drawn sprites, soft coastlines, dithered sea depth, four seasonal palettes, CSS-animated waves, sails, lamp and a marker for the newest tile.

@@ -116,4 +116,5 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           body="$(git log -1 --format=%b "$HEAD_SHA")"
-          gh pr merge "$PR" --squash --delete-branch --subject "$TITLE" --body "$body"
+          # Merge exactly the commit that was checked: a push after the check makes the merge fail.
+          gh pr merge "$PR" --squash --delete-branch --match-head-commit "$HEAD_SHA" --subject "$TITLE" --body "$body"
