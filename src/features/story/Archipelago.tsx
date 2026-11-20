@@ -5,12 +5,14 @@ import styles from './Archipelago.module.css';
 import { SectionHead } from './SectionHead';
 
 /**
- * Fetch a sibling island's README image at build time (refreshed every few hours) and
- * inline it – visitors never load anything from third-party hosts.
+ * Fetch a sibling island's README image at build time and inline it – visitors never load
+ * anything from third-party hosts. Build time only (no `revalidate`): the site redeploys every
+ * day anyway, and a revalidating fetch would turn `/` into an ISR route whose bytes count as
+ * Vercel Fast Origin Transfer (docs/ARCHITEKTUR.md, "Fast Origin Transfer").
  */
 async function siblingImage(url: string): Promise<string | null> {
   try {
-    const res = await fetch(url, { next: { revalidate: 21_600 }, signal: AbortSignal.timeout(4000) });
+    const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
     if (!res.ok) return null;
     const svg = await res.text();
     if (!svg.trimStart().startsWith('<svg') || svg.length > 2_000_000) return null;

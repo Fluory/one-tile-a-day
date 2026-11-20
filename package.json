@@ -22,7 +22,9 @@
     "world:check": "tsx src/features/routine/cli.ts check",
     "world:render": "tsx src/features/routine/cli.ts render",
     "verify:changed": "bash scripts/verify-changed.sh",
-    "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run world:check && npm run build",
+    "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run world:check && npm run build && npm run check:static",
+    "check:static": "node scripts/check-static.mjs",
+    "measure:origin": "node scripts/measure-origin-transfer.mjs",
     "verify:full": "npm run verify && npm run e2e",
     "media": "tsx src/features/media/cli.ts"
   },

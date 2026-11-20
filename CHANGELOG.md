@@ -5,6 +5,9 @@ Only what changes **in the product** – the daily world changes live in [LOGBOO
 
 ## [Unreleased]
 
+### Changed
+- The home page is fully static again: the sister-island images are fetched at build time only (no 6-hour ISR). ISR traffic counts as Vercel Fast Origin Transfer; measured locally 0.76 MB → 0 MB per typical visit. New guard `npm run check:static` (part of `verify`) and `npm run measure:origin`; see ADR-4 in `docs/ARCHITEKTUR.md`.
+
 ### Security
 - Lockfile: `next` 16.3.6 → 16.4.6, `zod` and `source-map-js` patched (`npm audit fix`, no `package.json` change; one critical and two high advisories in production dependencies).
 - The daily auto-merge only merges the exact commit the check ran on (`--match-head-commit`); a later push to the pull request makes the merge fail instead of slipping through unchecked.
