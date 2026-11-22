@@ -38,7 +38,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.^,,..~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.^,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.....~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -154,6 +154,7 @@
     {"day":51,"date":"2026-11-18","action":"path","x":30,"y":30,"title":"A path to the mill door","lore":"Hanno carries flour sacks past Ilka's door so often that a path packs hard into the sand beside the windmill, and Ilka swears she hears him whistling before dawn.","source":"claude","element":"e26"},
     {"day":52,"date":"2026-11-19","action":"land","x":29,"y":30,"title":"Sand at the end of the mill path","lore":"Where Hanno's new path meets the water, the sea gives back a strip of sand, and he walks out each morning to read the wind before opening the mill.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":53,"date":"2026-11-20","action":"animal","x":29,"y":30,"title":"A crab on the mill beach","lore":"A small red crab claims the new strip of sand at the end of the mill path and scuttles sideways each time Hanno comes out to read the wind.","source":"claude","element":"e27"},
-    {"day":54,"date":"2026-11-21","action":"land","x":34,"y":33,"title":"Sand between jetty and harbour","lore":"On the east shore the tide leaves a bank of sand between the old jetty and the new harbour, and the cat claims it at once for her morning sun.","source":"claude","terrain":{"from":"water","to":"sand"}}
+    {"day":54,"date":"2026-11-21","action":"land","x":34,"y":33,"title":"Sand between jetty and harbour","lore":"On the east shore the tide leaves a bank of sand between the old jetty and the new harbour, and the cat claims it at once for her morning sun.","source":"claude","terrain":{"from":"water","to":"sand"}},
+    {"day":55,"date":"2026-11-22","action":"meadow","x":33,"y":33,"title":"Grass for the cat's corner","lore":"Sheltered now by the new east sandbank, grass creeps into the cat's corner just south of Dagny's house, and the cat approves by sleeping on it all day.","source":"claude","terrain":{"from":"sand","to":"grass"}}
   ]
 }
