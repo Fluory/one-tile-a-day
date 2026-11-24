@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 56** · 27 tiles of land · 3 houses · 6 inhabitants · 3 animals · founded 28 Sep 2026
+**Day 57** · 27 tiles of land · 3 houses · 6 inhabitants · 3 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 57** · 24 Nov · 🌳 **A sapling in the cat's corner** — Dagny plants a young rowan in the cat's grassy corner so it will have shade in summer, and the cat inspects every leaf before allowing it to stay.
 - **Day 56** · 23 Nov · 🏝️ **A sandbar beside the harbour** — A low sandbar rises just east of the harbour wall, and Rune says the boat will lie easier now that the swell breaks on it first.
 - **Day 55** · 22 Nov · 🌿 **Grass for the cat's corner** — Sheltered now by the new east sandbank, grass creeps into the cat's corner just south of Dagny's house, and the cat approves by sleeping on it all day.
 - **Day 54** · 21 Nov · 🏝️ **Sand between jetty and harbour** — On the east shore the tide leaves a bank of sand between the old jetty and the new harbour, and the cat claims it at once for her morning sun.
