@@ -98,7 +98,8 @@
     {"id":"e25","day":49,"type":"inhabitant","x":33,"y":32,"variant":0,"name":"Hanno","role":"miller","home":"e21"},
     {"id":"e26","day":51,"type":"path","x":30,"y":30,"variant":0},
     {"id":"e27","day":53,"type":"animal","x":29,"y":30,"variant":0,"role":"crab"},
-    {"id":"e28","day":57,"type":"tree","x":33,"y":33,"variant":3}
+    {"id":"e28","day":57,"type":"tree","x":33,"y":33,"variant":3},
+    {"id":"e29","day":58,"type":"path","x":30,"y":34,"variant":0}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -158,6 +159,7 @@
     {"day":54,"date":"2026-11-21","action":"land","x":34,"y":33,"title":"Sand between jetty and harbour","lore":"On the east shore the tide leaves a bank of sand between the old jetty and the new harbour, and the cat claims it at once for her morning sun.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":55,"date":"2026-11-22","action":"meadow","x":33,"y":33,"title":"Grass for the cat's corner","lore":"Sheltered now by the new east sandbank, grass creeps into the cat's corner just south of Dagny's house, and the cat approves by sleeping on it all day.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":56,"date":"2026-11-23","action":"land","x":34,"y":34,"title":"A sandbar beside the harbour","lore":"A low sandbar rises just east of the harbour wall, and Rune says the boat will lie easier now that the swell breaks on it first.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":57,"date":"2026-11-24","action":"tree","x":33,"y":33,"title":"A sapling in the cat's corner","lore":"Dagny plants a young rowan in the cat's grassy corner so it will have shade in summer, and the cat inspects every leaf before allowing it to stay.","source":"claude","element":"e28"}
+    {"day":57,"date":"2026-11-24","action":"tree","x":33,"y":33,"title":"A sapling in the cat's corner","lore":"Dagny plants a young rowan in the cat's grassy corner so it will have shade in summer, and the cat inspects every leaf before allowing it to stay.","source":"claude","element":"e28"},
+    {"day":58,"date":"2026-11-25","action":"path","x":30,"y":34,"title":"Steps at the foot of the lighthouse","lore":"Tove lays flat stones in the sand at the foot of the lighthouse, so that on stormy nights the way to the lamp door stays firm underfoot.","source":"claude","element":"e29"}
   ]
 }
