@@ -40,7 +40,7 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.^,,,.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~......~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -160,6 +160,7 @@
     {"day":55,"date":"2026-11-22","action":"meadow","x":33,"y":33,"title":"Grass for the cat's corner","lore":"Sheltered now by the new east sandbank, grass creeps into the cat's corner just south of Dagny's house, and the cat approves by sleeping on it all day.","source":"claude","terrain":{"from":"sand","to":"grass"}},
     {"day":56,"date":"2026-11-23","action":"land","x":34,"y":34,"title":"A sandbar beside the harbour","lore":"A low sandbar rises just east of the harbour wall, and Rune says the boat will lie easier now that the swell breaks on it first.","source":"claude","terrain":{"from":"water","to":"sand"}},
     {"day":57,"date":"2026-11-24","action":"tree","x":33,"y":33,"title":"A sapling in the cat's corner","lore":"Dagny plants a young rowan in the cat's grassy corner so it will have shade in summer, and the cat inspects every leaf before allowing it to stay.","source":"claude","element":"e28"},
-    {"day":58,"date":"2026-11-25","action":"path","x":30,"y":34,"title":"Steps at the foot of the lighthouse","lore":"Tove lays flat stones in the sand at the foot of the lighthouse, so that on stormy nights the way to the lamp door stays firm underfoot.","source":"claude","element":"e29"}
+    {"day":58,"date":"2026-11-25","action":"path","x":30,"y":34,"title":"Steps at the foot of the lighthouse","lore":"Tove lays flat stones in the sand at the foot of the lighthouse, so that on stormy nights the way to the lamp door stays firm underfoot.","source":"claude","element":"e29"},
+    {"day":59,"date":"2026-11-26","action":"land","x":31,"y":35,"title":"New sand on the south shore","lore":"After a night of grey rain the south shore reaches one step further into the sea, and Maren walks out to the new edge to watch the light come up.","source":"claude","terrain":{"from":"water","to":"sand"}}
   ]
 }
