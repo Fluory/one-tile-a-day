@@ -4,10 +4,11 @@
 > ([ROUTINE.md](ROUTINE.md)). The single source of truth is [`world/world.json`](world/world.json);
 > this file is generated from it. Days marked *auto* were decided by the rule-based director instead of Claude.
 
-**Day 59** · 28 tiles of land · 3 houses · 6 inhabitants · 3 animals · founded 28 Sep 2026
+**Day 60** · 28 tiles of land · 3 houses · 6 inhabitants · 3 animals · founded 28 Sep 2026
 
 ## November 2026
 
+- **Day 60** · 27 Nov · 🌿 **Grass below the old field** — Now that yesterday's sand shields it from the sea, grass spreads south from Ilka's first field to the lighthouse steps, soft and green despite the cold.
 - **Day 59** · 26 Nov · 🏝️ **New sand on the south shore** — After a night of grey rain the south shore reaches one step further into the sea, and Maren walks out to the new edge to watch the light come up.
 - **Day 58** · 25 Nov · 🛤️ **Steps at the foot of the lighthouse** — Tove lays flat stones in the sand at the foot of the lighthouse, so that on stormy nights the way to the lamp door stays firm underfoot.
 - **Day 57** · 24 Nov · 🌳 **A sapling in the cat's corner** — Dagny plants a young rowan in the cat's grassy corner so it will have shade in summer, and the cat inspects every leaf before allowing it to stay.
