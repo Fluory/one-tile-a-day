@@ -99,7 +99,8 @@
     {"id":"e26","day":51,"type":"path","x":30,"y":30,"variant":0},
     {"id":"e27","day":53,"type":"animal","x":29,"y":30,"variant":0,"role":"crab"},
     {"id":"e28","day":57,"type":"tree","x":33,"y":33,"variant":3},
-    {"id":"e29","day":58,"type":"path","x":30,"y":34,"variant":0}
+    {"id":"e29","day":58,"type":"path","x":30,"y":34,"variant":0},
+    {"id":"e30","day":61,"type":"library","x":31,"y":34,"variant":0}
   ],
   "days": [
     {"day":0,"date":"2026-09-28","action":"genesis","x":31,"y":32,"title":"A sandbank in the open sea","lore":"Nothing but water – and in the middle of it, a small sandbank. Tomorrow, the island begins.","source":"genesis"},
@@ -162,6 +163,7 @@
     {"day":57,"date":"2026-11-24","action":"tree","x":33,"y":33,"title":"A sapling in the cat's corner","lore":"Dagny plants a young rowan in the cat's grassy corner so it will have shade in summer, and the cat inspects every leaf before allowing it to stay.","source":"claude","element":"e28"},
     {"day":58,"date":"2026-11-25","action":"path","x":30,"y":34,"title":"Steps at the foot of the lighthouse","lore":"Tove lays flat stones in the sand at the foot of the lighthouse, so that on stormy nights the way to the lamp door stays firm underfoot.","source":"claude","element":"e29"},
     {"day":59,"date":"2026-11-26","action":"land","x":31,"y":35,"title":"New sand on the south shore","lore":"After a night of grey rain the south shore reaches one step further into the sea, and Maren walks out to the new edge to watch the light come up.","source":"claude","terrain":{"from":"water","to":"sand"}},
-    {"day":60,"date":"2026-11-27","action":"meadow","x":31,"y":34,"title":"Grass below the old field","lore":"Now that yesterday's sand shields it from the sea, grass spreads south from Ilka's first field to the lighthouse steps, soft and green despite the cold.","source":"claude","terrain":{"from":"sand","to":"grass"}}
+    {"day":60,"date":"2026-11-27","action":"meadow","x":31,"y":34,"title":"Grass below the old field","lore":"Now that yesterday's sand shields it from the sea, grass spreads south from Ilka's first field to the lighthouse steps, soft and green despite the cold.","source":"claude","terrain":{"from":"sand","to":"grass"}},
+    {"day":61,"date":"2026-11-28","action":"library","x":31,"y":34,"title":"A library beside the lighthouse steps","lore":"Dagny builds a small library on the new grass beside the lighthouse steps, and Maren fills its first shelf with the island's stories, written down at last.","source":"claude","element":"e30"}
   ]
 }
